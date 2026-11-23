@@ -334,6 +334,227 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 .net .core text{font-family:Sora;font-weight:800;fill:#fff;text-anchor:middle}
 
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.hero h1 .l>span{transform:none}.iso .slab,.iso .e{stroke-dashoffset:0}.iso .m,.iso .mep,.iso .lead,.iso .dot,.iso .tag,.iso .e.back{opacity:1}}
+
+/* ===== borrowed from Niqat catalogs (Nov 2026) ===== */
+.zone{background:#fff;border-radius:20px;box-shadow:0 0 0 1px #DDDAD5,0 14px 34px -26px rgba(0,0,0,.22);position:relative}
+@keyframes driveh{to{background-position:-44px 0}}
+
+/* product codes */
+.pcode{display:inline-block;font-family:"Sora",sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.04em;color:var(--o);background:rgba(255,102,0,.08);border:1px solid rgba(255,102,0,.28);border-radius:7px;padding:1px 8px;line-height:1.7;direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+.row .pcode{margin-top:10px}
+.tbl td.cd{text-align:left}
+.pcodes{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+@media(max-width:760px){.tbl td.cd .pcode{font-size:10.5px;letter-spacing:0}}
+
+/* partners strip (hero) */
+.adsk{padding:20px 0 16px}
+.adsk .wrap{flex-direction:column;gap:10px}
+.pt-l{font-family:Sora;font-size:11.5px;font-weight:700;letter-spacing:.18em;color:var(--muted)}
+.pt-vp{width:100%;overflow:hidden}
+.pt-tr{display:flex;align-items:center;justify-content:center;gap:34px}
+.pt-tr .swap{flex:none;display:inline-flex;align-items:center;height:40px}
+.pt-tr .swap img{height:38px;width:auto}
+.pt-tr .fb{font-family:Sora;font-weight:800;font-size:15px;letter-spacing:.04em;white-space:nowrap}
+.pt-dup{display:none}
+.pt-cap{font-size:14.5px;color:var(--lead)}
+.pt-cap em{font-style:normal;color:var(--odk);font-weight:600}
+@keyframes ptM{to{transform:translateX(50%)}}
+@media(max-width:900px){
+  .pt-vp{-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+  .pt-tr{justify-content:flex-start;width:max-content;gap:30px;animation:ptM 22s linear infinite;padding-inline-end:30px}
+  .pt-tr .pt-dup{display:contents}
+  .pt-vp.hold .pt-tr{animation-play-state:paused}
+  .pt-tr .swap img{height:32px}
+}
+@media (prefers-reduced-motion:reduce){.pt-tr{animation:none!important}.pt-vp{overflow-x:auto}}
+
+/* partner logos in rows */
+.prow .pn.swap img{height:40px;width:auto;max-width:100%;object-fit:contain;object-position:right center}
+.prow.top .pn.swap img{height:52px}
+
+/* libraries: hours */
+.fig small{display:block;margin-top:4px;font-family:Sora,"Readex Pro";font-size:13px;font-weight:700;color:var(--o)}
+
+/* reach path (numbers) */
+.reach{list-style:none;margin:30px 0 0;padding:0;display:flex;justify-content:center;max-width:620px;position:relative}
+.reach::before{content:"";position:absolute;top:21px;inset-inline:12%;height:2px;background:repeating-linear-gradient(270deg,var(--o) 0 10px,transparent 10px 18px);background-size:36px 2px;animation:driveh 1.4s linear infinite}
+.reach li{flex:1;display:flex;flex-direction:column;align-items:center;gap:10px;position:relative;font-size:14.5px;font-weight:600;text-align:center;line-height:1.4}
+.pin{flex:none;width:44px;height:44px;border-radius:50%;background:#FF6600;color:#000;display:grid;place-items:center;box-shadow:0 0 0 6px rgba(255,102,0,.16)}
+.pin svg{width:20px;height:20px;display:block}
+.reach li.soon .pin{background:#fff;color:#191919;box-shadow:0 0 0 2px #FF6600}
+.reach li.soon small{display:block;font-size:12px;font-weight:700;color:var(--o)}
+@media(max-width:560px){.reach li{font-size:13px}.reach .pin{width:40px;height:40px}.reach::before{top:19px}}
+
+/* weekly rhythm (method) */
+.rhythm{padding:28px;margin-top:40px}
+.rhythm h3{margin:0 0 20px;font-size:21px;font-weight:800}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;position:relative}
+.steps::before{content:"";position:absolute;top:26px;inset-inline:16%;height:2px;background:repeating-linear-gradient(270deg,var(--o) 0 10px,transparent 10px 18px);background-size:36px 2px;animation:driveh 1.4s linear infinite;opacity:.7}
+.steps li{position:relative;text-align:center;padding:0 4px}
+.steps .pin{margin:0 auto 12px;width:52px;height:52px}
+.steps .pin svg{width:24px;height:24px}
+.steps b{display:block;font-size:16px;font-weight:700;color:#191919}
+.steps span{display:block;color:var(--muted);font-size:13.5px;line-height:1.55}
+.facts-l{list-style:none;margin:22px 0 0;padding:18px 0 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.facts-l li{display:flex;gap:10px;font-size:15px;color:var(--muted)}
+.facts-l li svg{width:18px;height:18px;flex:none;color:var(--o);margin-top:5px}
+@media(max-width:640px){.rhythm{padding:22px 16px}.facts-l{grid-template-columns:1fr}.steps b{font-size:14.5px}.steps span{font-size:12.5px}}
+
+/* app card */
+#apps{margin-top:40px;padding:26px}
+#apps .ap-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+#apps .ap-pn{font-family:Sora,sans-serif;font-size:13px;font-weight:700;color:#FF6600;letter-spacing:.06em;direction:ltr;text-align:right}
+#apps h3.ap-ttl{margin:4px 0 6px;font-size:23px;font-weight:800;line-height:1.35}
+#apps .ap-lead{margin:0;color:#4A4A4A;font-size:15px;line-height:1.7;max-width:640px}
+#apps .ap-grid{display:grid;grid-template-columns:1fr;gap:12px}
+@media (min-width:860px){#apps .ap-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+#apps .ap-t{display:flex;flex-direction:column;gap:12px;padding:16px;border-radius:18px;background:#F7F6F4;box-shadow:inset 0 0 0 1px #ECEBE9;text-decoration:none;color:#191919;min-width:0;transition:background .2s,box-shadow .2s,transform .2s}
+#apps a.ap-t:hover{background:#fff;box-shadow:inset 0 0 0 1.5px #FF6600,0 18px 36px -24px rgba(255,102,0,.6);transform:translateY(-2px)}
+#apps .ap-h{display:flex;align-items:center;gap:12px}
+#apps .ap-ic{width:46px;height:46px;border-radius:13px;flex:none;display:block}
+#apps .ap-nm{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px}
+#apps .ap-nm b{font-size:16.5px;font-weight:800;line-height:1.35}
+#apps .ap-nm small{font-family:Sora,sans-serif;font-size:12px;font-weight:600;color:#808080;direction:ltr;text-align:right}
+#apps .ap-tag{flex:none;font-size:11.5px;font-weight:800;padding:4px 10px;border-radius:99px;background:#FF6600;color:#fff;white-space:nowrap}
+#apps .ap-t p{margin:0;color:#4A4A4A;font-size:14px;line-height:1.7;flex:1}
+#apps .ap-stat{display:flex;gap:6px;flex-wrap:wrap}
+#apps .ap-stat span{font-size:12px;font-weight:700;color:#191919;background:#fff;box-shadow:inset 0 0 0 1px #FFD1B3;border-radius:8px;padding:3px 9px}
+#apps .ap-stat .en{font-family:Sora,sans-serif;direction:ltr;unicode-bidi:isolate}
+#apps .ap-btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;border-radius:12px;background:#FF6600;color:#fff;font-size:14px;font-weight:800;transition:background .2s}
+#apps a.ap-t:hover .ap-btn{background:#191919}
+#apps .ap-soon .ap-ic{filter:grayscale(1);opacity:.4}
+#apps .ap-soon .ap-tag,#apps .ap-soon .ap-btn{background:#ECEBE9;color:#808080}
+@media (max-width:640px){#apps{padding:20px}#apps h3.ap-ttl{font-size:20px}}
+
+/* follow card (contact) */
+.follow{text-align:center;padding:40px 24px;margin-top:clamp(40px,5vw,64px);color:#191919}
+.follow h3{margin:0 0 6px;font-size:clamp(22px,3.6vw,30px);font-weight:800}
+.follow p{margin:0 0 24px;color:#4A4A4A;font-size:16px}
+.soc{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.soc a{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:#fff;color:#191919;box-shadow:0 0 0 1px #E2DFDA;transition:transform .3s var(--ease),background .3s,box-shadow .3s,color .3s}
+.soc a:hover{transform:translateY(-4px);background:#FF6600;box-shadow:0 14px 30px -12px rgba(255,102,0,.8);color:#000}
+.soc a[href*="wa.me"]:hover{background:var(--wa);color:#fff}
+.soc svg{width:24px;height:24px}
+@media(max-width:640px){.soc{gap:10px}.soc a{width:48px;height:48px;border-radius:14px}.soc svg{width:22px;height:22px}}
+
+/* floating bar: WhatsApp + share */
+.mbar{position:fixed;inset-inline:0;bottom:0;z-index:45;display:none;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid #E2DFDA;transform:translateY(120%);transition:transform .35s var(--ease)}
+.mbar.show{transform:none}
+.mbar a,.mbar button{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;border-radius:14px;font-weight:700;font-size:15.5px}
+.mbar .mb-wa{flex:1;background:var(--wa);color:#fff}
+.mbar .mb-sh{flex:none;width:52px;background:#fff;color:#191919;box-shadow:inset 0 0 0 1px #DDDAD5}
+.mbar svg{width:20px;height:20px;fill:currentColor}
+.mbar .mb-sh svg{fill:none;stroke:currentColor;stroke-width:2}
+.mbar .mb-sh.ok{background:var(--tint)}
+@media (max-width:640px){.mbar{display:flex}body{padding-bottom:80px}}
+@media (min-width:641px){.mbar{display:flex;inset:auto auto 24px 24px;width:auto;padding:8px;gap:8px;border-radius:99px;background:#fff;border:0;box-shadow:0 0 0 1px #E2DFDA,0 22px 44px -18px rgba(0,0,0,.4);transform:translateY(180%)}.mbar.show{transform:none}.mbar .mb-wa{flex:none;min-height:50px;padding:0 24px;border-radius:99px;font-size:15px}.mbar .mb-sh{width:50px;min-height:50px;border-radius:50%}}
+.steps .pin{display:grid!important;place-items:center}
+
+/* ===== round 2 ===== */
+/* hero: skyline + moving road line (from catalog) */
+.hroad{height:170px;margin-top:clamp(24px,4vw,48px);pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='240' viewBox='0 440 1440 240'%3E%3Cpath d='M-80 650H1520' stroke='%23ECEBE9' stroke-width='10'/%3E%3Cpath d='M980 650V560h110v90M1090 650V500h90v150M1180 650V585h100v65M1280 650V540h80v110M1360 650V600h120v50M120 650V590h90v60M210 650V545h70v105' fill='none' stroke='%23DDDAD5' stroke-width='3'/%3E%3Cpath d='M-96 650H1536' stroke='%23FF6600' stroke-width='5' stroke-dasharray='28 20'%3E%3Canimate attributeName='stroke-dashoffset' from='0' to='48' dur='1.4s' repeatCount='indefinite'/%3E%3C/path%3E%3C/svg%3E") 50% 100%/1440px 240px repeat-x}
+.hroad+.adsk{margin-top:0}
+@media(max-width:640px){.hroad{height:130px;background-size:1100px 183px}}
+
+/* hero: Niqat journey animation */
+.jr{position:relative;aspect-ratio:1/1;width:100%}
+.jr svg.jr-bg{position:absolute;inset:0;width:100%;height:100%}
+.jr-path{fill:none;stroke:#FFD1B3;stroke-width:2;stroke-dasharray:8 8;animation:jrd 1.6s linear infinite}
+@keyframes jrd{to{stroke-dashoffset:-32}}
+.jr-st{position:absolute;transform:translate(50%,-50%);display:flex;flex-direction:column;align-items:center;gap:6px;z-index:2}
+.jr-st .ic{width:56px;height:56px;border-radius:18px;background:#fff;color:#191919;display:grid;place-items:center;box-shadow:0 0 0 1.5px #FFD1B3,0 12px 26px -18px rgba(0,0,0,.35);transition:background .45s,color .45s,box-shadow .45s,transform .45s var(--ease)}
+.jr-st .ic svg{width:26px;height:26px}
+.jr-st b{font-size:14px;font-weight:700;color:#191919;white-space:nowrap;background:rgba(255,255,255,.9);padding:1px 8px;border-radius:8px}
+.jr-st small{font-family:Sora;font-size:10px;font-weight:800;letter-spacing:.14em;color:#808080;transition:color .45s}
+.jr-st.on .ic{background:#FF6600;color:#fff;transform:scale(1.12);box-shadow:0 0 0 8px rgba(255,102,0,.16),0 18px 34px -16px rgba(255,102,0,.7)}
+.jr-st.on small{color:#FF6600}
+.jr-c{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:44%;aspect-ratio:1/1;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #FFD1B3,0 24px 50px -30px rgba(255,102,0,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;z-index:1}
+.jr-c::before{content:"";position:absolute;inset:-14px;border-radius:50%;border:1.5px dashed #FFD1B3;animation:jrs 30s linear infinite}
+@keyframes jrs{to{transform:rotate(360deg)}}
+.jr-mark{width:38%;aspect-ratio:480/427;background:#FF6600;-webkit-mask:url(assets/niqat-mark.png) center/contain no-repeat;mask:url(assets/niqat-mark.png) center/contain no-repeat}
+.jr-k{font-family:Sora;font-weight:800;font-size:clamp(18px,2vw,24px);line-height:1;color:#191919;direction:ltr;transition:opacity .3s}
+.jr-l{font-size:12.5px;color:#6B6B6B;line-height:1.4;padding:0 10px;transition:opacity .3s}
+.jr-c.sw .jr-k,.jr-c.sw .jr-l{opacity:0}
+@media(max-width:640px){.jr-st .ic{width:46px;height:46px;border-radius:14px}.jr-st .ic svg{width:22px;height:22px}.jr-st b{font-size:12.5px}.jr-l{font-size:11px}}
+@media (prefers-reduced-motion:reduce){.jr-path,.jr-c::before{animation:none}}
+
+/* journey timeline: animated line */
+.tline{position:relative}
+.tl-run{position:absolute;top:-2px;right:0;height:2px;width:100%;background:var(--o);transform:scaleX(0);transform-origin:right;transition:transform 2.4s cubic-bezier(.4,0,.2,1)}
+.tline.go .tl-run{transform:scaleX(1)}
+.tl-spark{position:absolute;top:-6px;right:0;width:40px;height:10px;border-radius:10px;background:radial-gradient(closest-side,#FF6600,rgba(255,102,0,0));opacity:0}
+.tline.go .tl-spark{animation:tlsp 3.6s 2.6s linear infinite}
+@keyframes tlsp{0%{right:0;opacity:0}10%{opacity:1}90%{opacity:1}100%{right:calc(100% - 40px);opacity:0}}
+.ts .dot{transform:scale(0);transition:transform .5s var(--ease),background .4s}
+.tline.go .ts .dot{transform:scale(1)}
+.tline.go .ts:nth-child(2) .dot{transition-delay:.3s}.tline.go .ts:nth-child(3) .dot{transition-delay:.7s}.tline.go .ts:nth-child(4) .dot{transition-delay:1.1s}.tline.go .ts:nth-child(5) .dot{transition-delay:1.5s}.tline.go .ts:nth-child(6) .dot{transition-delay:1.9s}.tline.go .ts:nth-child(7) .dot{transition-delay:2.3s}
+.ts.now .dot::after{content:"";position:absolute;inset:-6px;border-radius:50%;background:rgba(255,102,0,.25);animation:tlh 2.2s ease-out infinite}
+@keyframes tlh{0%{transform:scale(.6);opacity:1}100%{transform:scale(2.2);opacity:0}}
+@media (prefers-reduced-motion:reduce){.tl-run{transform:none}.ts .dot{transform:none}.tl-spark{display:none}}
+
+/* 35,000 in orange */
+.giant{color:var(--o)}
+
+/* partners rows: aligned logo column */
+#partners .prow{grid-template-columns:200px 200px minmax(0,1fr);gap:24px;padding:22px 0}
+#partners .prow .pn{display:flex;align-items:center;height:52px;font-size:21px;white-space:nowrap;direction:ltr;justify-content:flex-start}
+#partners .prow .pn.swap img{height:auto;max-height:46px;max-width:170px;width:auto}
+#partners .prow .rl{font-size:13.5px;line-height:1.5}
+#partners .prow p{font-size:15.5px}
+#partners .prow.top{grid-template-columns:auto 1fr;padding:26px 28px}
+#partners .prow.top .pn{height:auto;font-size:30px}
+#partners .prow.top .pn.swap img{max-height:58px;max-width:220px}
+#partners .plist{margin-top:20px;border-top:1px solid var(--line)}
+@media(max-width:760px){#partners .prow{grid-template-columns:140px minmax(0,1fr);gap:4px 16px}#partners .prow .pn{grid-row:span 2;height:auto;font-size:17px;white-space:normal}#partners .prow .pn.swap img{max-width:130px;max-height:40px}#partners .prow.top{grid-template-columns:1fr}}
+
+/* Autodesk certificate highlight */
+.adsk-cert{display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center;margin-top:40px;padding:26px 28px;border-radius:20px;background:#fff;box-shadow:0 0 0 2px #FF6600,0 30px 60px -34px rgba(255,102,0,.6);position:relative;overflow:hidden}
+.adsk-cert .lg{width:150px;height:64px;display:flex;align-items:center;justify-content:center}
+.adsk-cert .lg img{max-width:150px;max-height:52px}
+.adsk-cert .lg .fb{font-family:Sora;font-weight:800;font-size:22px;letter-spacing:.08em}
+.adsk-cert .k{font-family:Sora;font-size:12px;font-weight:800;letter-spacing:.14em;color:#FF6600}
+.adsk-cert h3{margin:4px 0 6px;font-size:clamp(19px,2vw,23px);font-weight:800}
+.adsk-cert p{color:var(--lead);font-size:15.5px}
+.adsk-cert .tag{position:absolute;top:16px;left:16px;font-size:12px;font-weight:800;background:#FF6600;color:#fff;border-radius:99px;padding:3px 12px}
+@media(max-width:640px){.adsk-cert{grid-template-columns:1fr;text-align:center;padding:24px 18px}.adsk-cert .lg{margin:0 auto}.adsk-cert .tag{position:static;justify-self:center}}
+
+/* Project N video */
+.pn-video{margin-top:clamp(48px,6vw,72px);padding:22px}
+.pn-video .vh{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.pn-video .k{font-family:Sora;font-size:12.5px;font-weight:800;letter-spacing:.14em;color:#FF6600}
+.pn-video h3{margin:4px 0 6px;font-size:clamp(20px,2.2vw,26px);font-weight:800}
+.pn-video p{color:var(--lead);font-size:15.5px;max-width:760px}
+.pn-video video{display:block;width:100%;aspect-ratio:16/9;border-radius:16px;background:#191919;object-fit:cover}
+.pn-video .mods{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pn-video .mods span{font-size:13px;font-weight:600;padding:5px 12px;border-radius:99px;background:var(--tint)}
+.pn-video .own{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#191919;background:#FFF3EA;box-shadow:inset 0 0 0 1px #FFD1B3;border-radius:99px;padding:6px 14px;white-space:nowrap}
+
+/* awards */
+.awards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.aw.wide{grid-column:span 2}.aw.wide h3{font-size:clamp(20px,2.2vw,26px)}.aw.wide .yr{font-size:44px}
+.aw .medal{background:#FFE0CC;color:#B34700}.aw.hot .medal{background:#fff;color:#B34700}
+.aw{padding:26px 22px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.aw .tr{width:52px;height:52px;border-radius:16px;background:var(--tint);color:#191919;display:grid;place-items:center}
+.aw .tr svg{width:26px;height:26px}
+.aw .yr{font-family:Sora;font-weight:800;font-size:34px;line-height:1;letter-spacing:-.03em}
+.aw .by{font-family:Sora;font-size:12px;font-weight:800;letter-spacing:.12em;color:#FF6600}
+.aw h3{font-size:18px;line-height:1.45}
+.aw p{font-size:14.5px;color:var(--lead)}
+.aw.hot{background:#FF6600;color:#fff;box-shadow:0 30px 60px -34px rgba(255,102,0,.9)}
+.aw.hot .tr{background:#fff;color:#FF6600}.aw.hot .by{color:#191919}.aw.hot p{color:#fff}
+.aw .medal{align-self:flex-start;font-size:12px;font-weight:800;border-radius:99px;padding:3px 12px;background:#fff;color:#B34700}
+@media(max-width:1000px){.awards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.aw.wide{grid-column:auto}}
+@media(max-width:560px){.awards{grid-template-columns:1fr}}
+
+/* spacing polish for blocks added in round 1 */
+#method .rhythm{margin-top:48px}
+.pcodes{margin-top:14px}
+#numbers .reach{margin-top:36px}
+.adsk-cert .k{text-align:right}@media(max-width:640px){.adsk-cert .k{text-align:center}.awards .aw{padding:22px 18px}}
+.aw .yr,.aw .by{text-align:right}
+
+#reviews .quotes{display:none}
 </style>
 </head>
 <body>
@@ -363,59 +584,11 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
         <span class="kick en rv">COMPANY PORTFOLIO · 2026</span>
         <h1><span class="l"><span>نؤهّل المهندس</span></span><span class="l"><span class="o">لسوق الـ <span class="en">BIM</span> العالمي</span></span></h1>
         <p class="lead rv">نقاط مؤسسة تدريب هندسي متخصصة في العمارة والهندسة وتقنيات <span class="en">BIM</span> منذ أكثر من 20 عامًا. ندرّب الأفراد، ونؤهّل فرق الشركات، ونطبّق الـ <span class="en">BIM</span> داخلها، ونرافق المهندس حتى سوق العمل.</p>
-        <div class="hbtns rv"><a class="btn wa" href="#contact"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>ابدأ مع نقاط</a><a class="btn sec" href="#index">محتويات البورتفوليو</a></div>
+        <div class="hbtns rv"><a class="btn wa" href="#contact"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>ابدأ مع نقاط</a><a class="btn sec" href="#index">محتويات الـ <span class="en">Portfolio</span></a></div>
       </div>
       <div class="scene rv">
-        <div class="box"><svg class="iso" viewBox="0 0 640 540" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-<line class="g" x1="270.0" y1="254.0" x2="6.7" y2="406.0"/>
-<line class="g" x1="302.9" y1="273.0" x2="39.6" y2="425.0"/>
-<line class="g" x1="335.8" y1="292.0" x2="72.5" y2="444.0"/>
-<line class="g" x1="368.7" y1="311.0" x2="105.5" y2="463.0"/>
-<line class="g" x1="401.6" y1="330.0" x2="138.4" y2="482.0"/>
-<line class="g" x1="434.5" y1="349.0" x2="171.3" y2="501.0"/>
-<line class="g" x1="467.5" y1="368.0" x2="204.2" y2="520.0"/>
-<line class="g" x1="500.4" y1="387.0" x2="237.1" y2="539.0"/>
-<line class="g" x1="533.3" y1="406.0" x2="270.0" y2="558.0"/>
-<line class="g" x1="566.2" y1="425.0" x2="302.9" y2="577.0"/>
-<line class="g" x1="599.1" y1="444.0" x2="335.8" y2="596.0"/>
-<line class="g" x1="270.0" y1="254.0" x2="599.1" y2="444.0"/>
-<line class="g" x1="237.1" y1="273.0" x2="566.2" y2="463.0"/>
-<line class="g" x1="204.2" y1="292.0" x2="533.3" y2="482.0"/>
-<line class="g" x1="171.3" y1="311.0" x2="500.4" y2="501.0"/>
-<line class="g" x1="138.4" y1="330.0" x2="467.5" y2="520.0"/>
-<line class="g" x1="105.5" y1="349.0" x2="434.5" y2="539.0"/>
-<line class="g" x1="72.5" y1="368.0" x2="401.6" y2="558.0"/>
-<line class="g" x1="39.6" y1="387.0" x2="368.7" y2="577.0"/>
-<line class="g" x1="6.7" y1="406.0" x2="335.8" y2="596.0"/>
-<polygon class="slab" style="--i:0" points="270.0,330.0 467.5,444.0 335.8,520.0 138.4,406.0"/>
-<polygon class="slab" style="--i:1" points="270.0,286.3 467.5,400.3 335.8,476.3 138.4,362.3"/>
-<polygon class="slab" style="--i:2" points="270.0,242.6 467.5,356.6 335.8,432.6 138.4,318.6"/>
-<polygon class="slab hl" style="--i:3" points="270.0,198.9 467.5,312.9 335.8,388.9 138.4,274.9"/>
-<polygon class="slab" style="--i:4" points="270.0,155.2 467.5,269.2 335.8,345.2 138.4,231.2"/>
-<polygon class="slab" style="--i:5" points="270.0,111.5 467.5,225.5 335.8,301.5 138.4,187.5"/>
-<polygon class="slab" style="--i:6" points="270.0,67.8 467.5,181.8 335.8,257.8 138.4,143.8"/>
-<line class="e" x1="138.4" y1="406.0" x2="138.4" y2="143.8"/>
-<line class="e" x1="335.8" y1="520.0" x2="335.8" y2="257.8"/>
-<line class="e" x1="467.5" y1="444.0" x2="467.5" y2="181.8"/>
-<line class="e back" x1="270.0" y1="330.0" x2="270.0" y2="67.8"/>
-<line class="m" x1="171.3" y1="425.0" x2="171.3" y2="162.8"/>
-<line class="m" x1="204.2" y1="444.0" x2="204.2" y2="181.8"/>
-<line class="m" x1="237.1" y1="463.0" x2="237.1" y2="200.8"/>
-<line class="m" x1="270.0" y1="482.0" x2="270.0" y2="219.8"/>
-<line class="m" x1="302.9" y1="501.0" x2="302.9" y2="238.8"/>
-<line class="m" x1="434.5" y1="463.0" x2="434.5" y2="200.8"/>
-<line class="m" x1="401.6" y1="482.0" x2="401.6" y2="219.8"/>
-<line class="m" x1="368.7" y1="501.0" x2="368.7" y2="238.8"/>
-<line class="mep" x1="279.9" y1="373.7" x2="279.9" y2="126.7"/>
-<path class="mep" d="M279.9,229.3 L388.5,292.0 L322.7,330.0 L237.1,280.6"/>
-<circle class="pulse" cx="388.5" cy="292.0" r="7"/>
-<circle class="dot" cx="388.5" cy="292.0" r="5"/>
-<line class="lead" x1="467.5" y1="181.8" x2="503.5" y2="151.8"/>
-<g class="tag" transform="translate(507,148)"><rect x="0" y="-16" width="118" height="30" rx="15"/><text x="59" y="4">LOD 400</text></g>
-<g class="tag o" transform="translate(406,252)"><rect x="0" y="-16" width="138" height="30" rx="15"/><text x="69" y="4">CLASH ✓ 0</text></g>
-<g class="tag" transform="translate(10,279)"><rect x="0" y="-16" width="128" height="30" rx="15"/><text x="64" y="4">ISO 19650</text></g>
-</svg></div>
-        <div class="cap"><span>هيكل إنشائي · معماري · <span class="en">MEP</span> — في نموذج واحد بلا تعارضات</span><b class="en">MODEL · COORDINATE · DELIVER</b></div>
+        <div class="box"><div class="jr" id="jr" aria-label="رحلة المهندس مع نقاط: تدريب، تطبيق، اعتماد، توظيف"><svg class="jr-bg" viewBox="0 0 400 400" aria-hidden="true"><path id="jrP" class="jr-path" d="M200 60H270A70 70 0 0 1 340 130V270A70 70 0 0 1 270 340H130A70 70 0 0 1 60 270V130A70 70 0 0 1 130 60Z"/><circle r="8" fill="#FF6600"><animateMotion id="jrM" dur="10s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;0.25;0.25;0.5;0.5;0.75;0.75;1" keyTimes="0;0.14;0.25;0.39;0.5;0.64;0.75;0.89;1"><mpath href="#jrP"/></animateMotion></circle><circle r="16" fill="#FF6600" opacity=".18"><animateMotion dur="10s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;0.25;0.25;0.5;0.5;0.75;0.75;1" keyTimes="0;0.14;0.25;0.39;0.5;0.64;0.75;0.89;1"><mpath href="#jrP"/></animateMotion></circle></svg><div class="jr-st" data-i="0" style="right:50%;top:15%"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 9v6"/></svg></span><b>تدريب</b><small>TRAIN</small></div><div class="jr-st" data-i="1" style="right:15%;top:50%"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 22V12M21 7l-9 5-9-5"/></svg></span><b>تطبيق</b><small>APPLY</small></div><div class="jr-st" data-i="2" style="right:50%;top:85%"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 14.5 7.5 22l4.5-2.5 4.5 2.5-1.5-7.5"/><path d="M9.5 9l1.7 1.7L14.5 7.5"/></svg></span><b>اعتماد</b><small>CERTIFY</small></div><div class="jr-st" data-i="3" style="right:85%;top:50%"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><b>توظيف</b><small>HIRE</small></div><div class="jr-c" id="jrC"><span class="jr-mark" aria-hidden="true"></span><span class="jr-k" id="jrK">35,000+</span><span class="jr-l" id="jrL">متدرب وخريج في عائلة نقاط</span></div></div></div>
+        <div class="cap"><span>من أول محاضرة لحد أول وظيفة — رحلة المهندس مع نقاط</span><b class="en">TRAIN · APPLY · CERTIFY · HIRE</b></div>
       </div>
     </div>
     <div class="figs hfigs rv">
@@ -426,7 +599,8 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
       <div class="fig"><b class="o">+35K</b><span>متدرب وخريج</span></div>
     </div>
   </div>
-  <div class="adsk"><div class="wrap"><span class="swap"><img src="assets/autodesk-black.png" alt="Autodesk" style="height:24px"><span class="fb en">AUTODESK</span></span><b class="en">Learning Partner</b><span class="d"></span><span>شريك <span class="en">Autodesk</span> معتمد <em>من +10 سنين</em></span></div></div>
+  <div class="hroad" aria-hidden="true"></div>
+  <div class="adsk"><div class="wrap"><span class="pt-l en">IN PARTNERSHIP WITH</span><div class="pt-vp"><div class="pt-tr"><span class="swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/autodesk-black.png" alt="Autodesk Learning Partner" title="Autodesk Learning Partner" decoding="async"><span class="fb en">AUTODESK</span></span><span class="swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/certiport.png" alt="Certiport Authorized Testing Center" title="Certiport Authorized Testing Center" decoding="async"><span class="fb en">Certiport</span></span><span class="swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/plannerly.png" alt="Plannerly Authorized Training Center" title="Plannerly Authorized Training Center" decoding="async"><span class="fb en">Plannerly</span></span><span class="swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/building-transformations.png" alt="Building Transformations" title="Building Transformations" decoding="async"><span class="fb en">Building Transformations</span></span><span class="swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/newforma-konekt.png" alt="Newforma Konekt" title="Newforma Konekt" decoding="async"><span class="fb en">Newforma Konekt</span></span><span class="pt-dup" aria-hidden="true"><span class="swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/autodesk-black.png" alt="" title="Autodesk Learning Partner" decoding="async"><span class="fb en">AUTODESK</span></span><span class="swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/certiport.png" alt="" title="Certiport Authorized Testing Center" decoding="async"><span class="fb en">Certiport</span></span><span class="swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/plannerly.png" alt="" title="Plannerly Authorized Training Center" decoding="async"><span class="fb en">Plannerly</span></span><span class="swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/building-transformations.png" alt="" title="Building Transformations" decoding="async"><span class="fb en">Building Transformations</span></span><span class="swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/newforma-konekt.png" alt="" title="Newforma Konekt" decoding="async"><span class="fb en">Newforma Konekt</span></span></span></div></div><span class="pt-cap">شريك <span class="en">Autodesk</span> معتمد <em>من +10 سنين</em></span></div></div>
 </section>
 
 <!-- =============== INDEX =============== -->
@@ -434,14 +608,14 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
   <div class="wrap">
     <div class="head">
       <div class="eyebrow">Contents</div>
-      <h2>محتويات <span class="o">البورتفوليو</span></h2>
+      <h2>محتويات الـ <span class="o en">Portfolio</span></h2>
       <p class="lead">خمسة فصول تعرض نقاط من كل الجوانب.</p>
     </div>
     <div class="idx">
       <a href="#ch1" class="rv"><span class="n en">01</span><h3>عن نقاط</h3><span class="sm">من نحن · رحلتنا · نقاط بالأرقام</span><span class="ar">←</span></a>
       <a href="#ch2" class="rv"><span class="n en">02</span><h3>ماذا نقدم</h3><span class="sm">خدمات الشركات · الدبلومات المباشرة · التعلّم الذاتي · المكتبات والكورسات</span><span class="ar">←</span></a>
       <a href="#ch3" class="rv"><span class="n en">03</span><h3>كيف نعمل</h3><span class="sm">منهجية التعلّم · <span class="en">Project-N</span> · الدعم الفني</span><span class="ar">←</span></a>
-      <a href="#ch4" class="rv"><span class="n en">04</span><h3>النتائج</h3><span class="sm">الاعتمادات المهنية · <span class="en">Niqat Work</span></span><span class="ar">←</span></a>
+      <a href="#ch4" class="rv"><span class="n en">04</span><h3>النتائج</h3><span class="sm">الاعتمادات المهنية · <span class="en">Niqat Work</span> · خريجين نقاط · الجوائز</span><span class="ar">←</span></a>
       <a href="#ch5" class="rv"><span class="n en">05</span><h3>شركاء النجاح</h3><span class="sm">عملاؤنا · شركاؤنا · التعاون الأكاديمي · تكوينات · الفعاليات</span><span class="ar">←</span></a>
     </div>
   </div>
@@ -491,7 +665,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
       <h2>رحلة <span class="o">20 عامًا</span> من التطوير المستمر</h2>
       <p class="lead">كل مرحلة بدأت بسؤال واحد: كيف نجعل التدريب أقرب لبيئة العمل الحقيقية؟</p>
     </div>
-    <div class="tline">
+    <div class="tline" id="tline"><span class="tl-run" aria-hidden="true"></span><span class="tl-spark" aria-hidden="true"></span>
       <div class="ts rv"><i class="dot"></i><span class="tn">20+</span><div class="tu">عامًا مضت</div><h3>البدايات</h3><p>محتوى تعليمي على <span class="en">CD/DVD</span>، ثم منصات التعلّم الإلكتروني.</p></div>
       <div class="ts rv"><i class="dot"></i><span class="tn">360</span><div class="tu">متدرب</div><h3>دبلومة <span class="en">BIM 1.0</span></h3><p>الدفعات 01–06 بمحاكاة بيئة العمل.</p></div>
       <div class="ts rv"><i class="dot"></i><span class="tn">1,355</span><div class="tu">متدرب</div><h3>التوسّع</h3><p>الدفعات 07–11، موقع وتطبيق موبايل، وأول فرع في القاهرة الجديدة.</p></div>
@@ -509,7 +683,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
         <div class="eyebrow">03 · Niqat in Numbers</div>
         <h2>أرقام تعكس <span class="o">ثقة السوق</span></h2>
       </div>
-      <div class="rv"><div class="giant"><span data-count="35000">35,000</span><span class="o">+</span></div><p class="lead" style="margin-top:14px">متدرب وخريج في عائلة نقاط</p></div>
+      <div class="rv"><div class="giant"><span data-count="35000">35,000</span><span class="o">+</span></div><p class="lead" style="margin-top:14px">متدرب وخريج في عائلة نقاط</p><ul class="reach"><li><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>مصر</span></li><li><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span>العالم العربي</span></li><li><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><span>+25 دولة</span></li><li class="soon"><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.2 6.8H21l-5.5 4 2.1 6.7L12 15.4 6.4 19.5l2.1-6.7L3 8.8h6.8z"/></svg></span><span>والعالم كله<small>قريبًا</small></span></li></ul></div>
     </div>
     <div class="figs rv" style="--c:3">
       <div class="fig"><b>+<span data-count="200">200</span></b><span>شركة من القطاعين الخاص والحكومي</span></div>
@@ -568,13 +742,13 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
         <div class="fig"><b>4</b><span>فصول دراسية</span></div>
         <div class="fig"><b>32</b><span>محاضرة</span></div>
         <div class="fig"><b>96</b><span>جلسة تطبيقية</span></div>
-        <div class="fig"><b class="o">2</b><span>شهادتان: <span class="en">Autodesk</span> ونقاط</span></div>
+        <div class="fig"><b class="o">4</b><span>شهادات: 2 من <span class="en">Autodesk</span> و2 من نقاط</span></div>
       </div>
       <div class="rows" style="margin-top:48px">
-        <div class="row rv"><span class="n en">AR</span><div><h3 class="en" style="text-align:right">Architecture</h3><p>النمذجة المعمارية والتوثيق وإخراج اللوحات، حتى إدارة وتنسيق المشروع.</p><span class="code">ND-FULL-BIM-ARCH</span></div></div>
-        <div class="row rv"><span class="n en">ST</span><div><h3 class="en" style="text-align:right">Structure</h3><p>النمذجة الإنشائية والتسليح بـ <span class="en">Revit</span>، حتى إدارة وتنسيق المشروع.</p><span class="code">ND-FULL-BIM-STRU</span></div></div>
-        <div class="row rv"><span class="n en">ME</span><div><h3 class="en" style="text-align:right">Mechanical</h3><p>أعمال <span class="en">HVAC</span> و<span class="en">Plumbing</span> و<span class="en">Fire Fighting</span>، حتى إدارة وتنسيق المشروع.</p><span class="code">ND-FULL-BIM-MECH</span></div></div>
-        <div class="row rv"><span class="n en">EL</span><div><h3 class="en" style="text-align:right">Electrical</h3><p>أعمال <span class="en">Lighting</span> و<span class="en">Power</span> و<span class="en">Low Current</span>، حتى إدارة وتنسيق المشروع.</p><span class="code">ND-FULL-BIM-ELEC</span></div></div>
+        <div class="row rv"><span class="n en">AR</span><div><h3 class="en" style="text-align:right">Architecture</h3><p>النمذجة المعمارية والتوثيق وإخراج اللوحات، حتى إدارة وتنسيق المشروع.</p><span class="pcode">ND-FULL-BIM-ARCH-AR-01</span></div></div>
+        <div class="row rv"><span class="n en">ST</span><div><h3 class="en" style="text-align:right">Structure</h3><p>النمذجة الإنشائية والتسليح بـ <span class="en">Revit</span>، حتى إدارة وتنسيق المشروع.</p><span class="pcode">ND-FULL-BIM-STRU-AR-01</span></div></div>
+        <div class="row rv"><span class="n en">ME</span><div><h3 class="en" style="text-align:right">Mechanical</h3><p>أعمال <span class="en">HVAC</span> و<span class="en">Plumbing</span> و<span class="en">Fire Fighting</span>، حتى إدارة وتنسيق المشروع.</p><span class="pcode">ND-FULL-BIM-MECH-AR-01</span></div></div>
+        <div class="row rv"><span class="n en">EL</span><div><h3 class="en" style="text-align:right">Electrical</h3><p>أعمال <span class="en">Lighting</span> و<span class="en">Power</span> و<span class="en">Low Current</span>، حتى إدارة وتنسيق المشروع.</p><span class="pcode">ND-FULL-BIM-ELEC-AR-01</span></div></div>
       </div>
       <div class="tintbox rv" style="margin-top:40px">
         <div class="dotlist"><span class="it">محتوى مسجّل في استوديو نقاط</span><span class="it">جلسة <span class="en">Live</span> أسبوعية (2–3 ساعات) للمراجعة والأسئلة</span><span class="it">دبلومتا <span class="en">BIM</span> و<span class="en">Revit Architecture</span> متاحتان بالإنجليزية أيضًا</span></div>
@@ -588,23 +762,24 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
     <div class="head rv">
       <div class="eyebrow">06 · Self-Paced Diplomas</div>
       <h2>10 دبلومات <span class="o">بالتعلّم الذاتي</span></h2>
-      <p class="lead">محتوى مسجّل بالكامل يناسب المهندسين وفرق العمل ذات الجداول المرنة. تُسلَّم المهام في أي وقت، ويقيّمها فريق التعليم خلال 7–14 يومًا.</p>
+      <p class="lead">محتوى مسجّل بالكامل يناسب المهندسين وفرق العمل ذات الجداول المرنة. تُسلَّم المهام في أي وقت، ويقيّمها فريق التعليم خلال 7–14 يومًا. كل دبلومة على ترمين، ومعظمها 16 محاضرة مسجّلة و48 جلسة.</p>
     </div>
     <table class="tbl rv">
       <thead><tr><th>الدبلومة</th><th>ما تغطيه</th><th>المحاضرات</th><th>لقاء <span class="en">Live</span> شهري</th><th style="text-align:left">الكود</th></tr></thead>
       <tbody>
-        <tr><td>Draftman</td><td><span class="en">AutoCAD</span> للأعمال المعمارية والإنشائية و<span class="en">MEP</span></td><td>16</td><td class="yes">✓</td><td class="cd">ND-DM</td></tr>
-        <tr><td>BIM</td><td><span class="en">ISO 19650</span> وأبعاد النموذج من <span class="en">4D</span> إلى <span class="en">7D</span></td><td>16</td><td class="yes">✓</td><td class="cd">ND-BIM</td></tr>
-        <tr><td>Revit Architecture</td><td>النمذجة المعمارية الاحترافية</td><td>16</td><td class="yes">✓</td><td class="cd">ND-RVT-ARCH</td></tr>
-        <tr><td>Revit Structure</td><td>النمذجة الإنشائية والتفاصيل</td><td>16</td><td>—</td><td class="cd">ND-RVT-STRU</td></tr>
-        <tr><td>Revit Mechanical</td><td>نمذجة الأعمال الميكانيكية</td><td>16</td><td>—</td><td class="cd">ND-RVT-MECH</td></tr>
-        <tr><td>Revit Electrical</td><td>نمذجة الأعمال الكهربائية</td><td>16</td><td>—</td><td class="cd">ND-RVT-ELEC</td></tr>
-        <tr><td>Infrastructure</td><td><span class="en">Civil 3D · Navisworks · Inventor</span></td><td>16</td><td>—</td><td class="cd">ND-INFR</td></tr>
-        <tr><td>Visualization</td><td>إظهار داخلي وخارجي بـ <span class="en">3ds Max</span> و<span class="en">Corona</span> والذكاء الاصطناعي</td><td>16</td><td>—</td><td class="cd">ND-VIS</td></tr>
-        <tr><td>Interior Design</td><td>الألوان والإضاءة والخامات، <span class="en">AutoCAD</span> و<span class="en">Photoshop</span>، والإشراف على التنفيذ</td><td>—</td><td>—</td><td class="cd">ND-ID</td></tr>
-        <tr><td>Water Network Design</td><td>تصميم شبكات المياه بـ <span class="en">WaterGEMS</span> و<span class="en">HAMMER</span></td><td>14</td><td>—</td><td class="cd">ND-WND</td></tr>
+        <tr><td>Draftsman</td><td><span class="en">AutoCAD</span> للأعمال المعمارية والإنشائية و<span class="en">MEP</span></td><td>16</td><td class="yes">✓</td><td class="cd"><span class="pcode">ND-DM-AR-01</span></td></tr>
+        <tr><td>BIM</td><td><span class="en">ISO 19650</span> وأبعاد النموذج من <span class="en">4D</span> إلى <span class="en">7D</span></td><td>16</td><td class="yes">✓</td><td class="cd"><span class="pcode">ND-BIM-AR-01</span></td></tr>
+        <tr><td>Revit Architecture</td><td>النمذجة المعمارية الاحترافية</td><td>16</td><td class="yes">✓</td><td class="cd"><span class="pcode">ND-RVT-ARCH-AR-01</span></td></tr>
+        <tr><td>Revit Structure</td><td>النمذجة الإنشائية والتفاصيل</td><td>16</td><td class="yes">✓</td><td class="cd"><span class="pcode">ND-RVT-STRU-AR-01</span></td></tr>
+        <tr><td>Revit Mechanical</td><td>نمذجة الأعمال الميكانيكية</td><td>16</td><td class="yes">✓</td><td class="cd"><span class="pcode">ND-RVT-MECH-AR-01</span></td></tr>
+        <tr><td>Revit Electrical</td><td>نمذجة الأعمال الكهربائية</td><td>16</td><td class="yes">✓</td><td class="cd"><span class="pcode">ND-RVT-ELEC-AR-01</span></td></tr>
+        <tr><td>Infrastructure</td><td><span class="en">Civil 3D · Subassembly Composer · Inventor · Navisworks</span></td><td>16</td><td class="yes">✓</td><td class="cd"><span class="pcode">ND-INFR-AR-01</span></td></tr>
+        <tr><td>Visualization</td><td>إظهار داخلي وخارجي بـ <span class="en">3ds Max</span> و<span class="en">Corona</span> والذكاء الاصطناعي</td><td>16</td><td class="yes">✓</td><td class="cd"><span class="pcode">ND-VIS-AR-01</span></td></tr>
+        <tr><td>Interior Design</td><td>الألوان والإضاءة والخامات، <span class="en">AutoCAD</span> و<span class="en">Photoshop</span>، والإشراف على التنفيذ</td><td>16</td><td class="yes">✓</td><td class="cd"><span class="pcode">ND-ID-AR-01</span></td></tr>
+        <tr><td>Water Network Design</td><td>تصميم شبكات المياه بـ <span class="en">WaterGEMS</span> و<span class="en">HAMMER</span></td><td>14</td><td class="yes">✓</td><td class="cd"><span class="pcode">ND-WND-AR-01</span></td></tr>
       </tbody>
     </table>
+    <div class="tintbox rv" style="margin-top:24px"><div class="dotlist"><span class="it">لقاء مباشر مع المحاضر مرة كل شهر + جروب <span class="en">Telegram</span> في كل الدبلومات</span><span class="it">شهادة إتمام معتمدة من <span class="en">Autodesk</span> + شهادة من نقاط</span><span class="it">دبلومة <span class="en">Water Network Design</span> على برامج <span class="en">Bentley</span> بشهادة من نقاط</span></div></div>
   </div>
 </section>
 
@@ -617,13 +792,13 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
     </div>
     <div>
       <div class="figs sm2 rv" style="--c:5">
-        <div class="fig"><b>29</b><span class="en" style="text-align:right">Architecture</span></div>
-        <div class="fig"><b>27</b><span class="en" style="text-align:right">Infrastructure</span></div>
-        <div class="fig"><b>25</b><span class="en" style="text-align:right">Structure</span></div>
-        <div class="fig"><b>24</b><span class="en" style="text-align:right">Mechanical</span></div>
-        <div class="fig"><b>21</b><span class="en" style="text-align:right">Electrical</span></div>
+        <div class="fig"><b>29</b><span class="en" style="text-align:right">Architecture</span><small>406 ساعة</small></div>
+        <div class="fig"><b>27</b><span class="en" style="text-align:right">Infrastructure</span><small>439 ساعة</small></div>
+        <div class="fig"><b>25</b><span class="en" style="text-align:right">Structure</span><small>412 ساعة</small></div>
+        <div class="fig"><b>24</b><span class="en" style="text-align:right">Mechanical</span><small>337 ساعة</small></div>
+        <div class="fig"><b>21</b><span class="en" style="text-align:right">Electrical</span><small>323 ساعة</small></div>
       </div>
-      <p class="sm rv" style="margin-top:12px">5 مكتبات <span class="en">BIM</span> متخصصة · 126 كورسًا · الأكواد <span class="en">NL-BIM-ARCH / INFR / STRU / MECH / ELEC</span></p>
+      <p class="sm rv" style="margin-top:12px">5 مكتبات <span class="en">BIM</span> متخصصة · 126 كورسًا · <span class="en">1,917</span> ساعة محتوى مسجّل</p><div class="pcodes rv"><span class="pcode">NL-BIM-ARCH-AR-01</span><span class="pcode">NL-BIM-INFR-AR-01</span><span class="pcode">NL-BIM-STRU-AR-01</span><span class="pcode">NL-BIM-MECH-AR-01</span><span class="pcode">NL-BIM-ELEC-AR-01</span></div>
 
       <h3 class="rv" style="margin:64px 0 8px">منصة <span class="en">Niqat Library</span> خلال عام</h3>
       <div class="figs sm2 rv" style="--c:4">
@@ -633,6 +808,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
         <div class="fig"><b class="o">35</b><span>سنة تعلّم في سنة واحدة</span></div>
       </div>
       <p class="sm rv" style="margin-top:12px">ويب وموبايل · يونيو 2025 – مايو 2026</p>
+
 
       <h3 class="rv" style="margin:64px 0 8px">الكورسات المنفردة حسب المجال</h3>
       <div style="border-top:2px solid var(--ink)">
@@ -652,6 +828,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
       </div>
     </div>
   </div>
+  <div class="wrap"><div class="zone rv" id="apps"><div class="ap-hd"><div><div class="ap-pn">APP</div><h3 class="ap-ttl">منصة نقاط <span class="o">على كل الأجهزة</span></h3><p class="ap-lead">المتدرب بيتابع المحاضرات اللايف والتسجيلات من تطبيق نقاط أو من الموقع، على الموبايل أو اللابتوب وفي أي وقت.</p></div></div><div class="ap-grid"><a href="https://play.google.com/store/apps/details?id=com.niqatglobal5569.learners" target="_blank" rel="noopener" class="ap-t"><div class="ap-h"><img class="ap-ic" src="assets/niqat-app-icon.webp" alt="" width="46" height="46" loading="lazy"><span class="ap-nm"><b>تطبيق Android</b><small>Google Play</small></span><span class="ap-tag">متاح</span></div><p>تطبيق نقاط على Google Play: المحاضرات والتسجيلات والمهام من الموبايل.</p><span class="ap-stat"><span><b class="en">40K+</b> تحميل</span><span>تقييم 4.7 ★</span></span><span class="ap-btn">التطبيق على Google Play</span></a><div class="ap-t ap-soon"><div class="ap-h"><img class="ap-ic" src="assets/niqat-app-icon.webp" alt="" width="46" height="46" loading="lazy"><span class="ap-nm"><b>تطبيق iOS</b><small>App Store</small></span><span class="ap-tag">قريبًا</span></div><p>نسخة الآيفون تحت التطوير، وهتنزل قريب على App Store.</p><span class="ap-btn">قريبًا على App Store</span></div><a href="https://www.niqatglobal.com/" target="_blank" rel="noopener" class="ap-t"><div class="ap-h"><img class="ap-ic" src="assets/niqat-app-icon.webp" alt="" width="46" height="46" loading="lazy"><span class="ap-nm"><b>موقع نقاط</b><small>niqatglobal.com</small></span><span class="ap-tag">متاح</span></div><p>المنصة الكاملة من أي متصفح على اللابتوب أو الموبايل.</p><span class="ap-btn">زيارة المنصة ←</span></a></div></div></div>
 </section>
 
 <!-- =============== CHAPTER 3 =============== -->
@@ -672,6 +849,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
         <div class="row rv"><span class="n en">04</span><div><h3>مهام أسبوعية بتقييم</h3><p>مهمة عملية كل أسبوع يراجعها فريق التعليم.</p></div></div>
         <div class="row rv"><span class="n en">05</span><div><h3>متابعة الحضور والأداء</h3><p>الحضور يُحتسب مباشرةً أو بمشاهدة تسجيل الجلسة.</p></div></div>
       </div>
+      <div class="zone rhythm rv"><h3>إيقاع كل أسبوع</h3><ol class="steps"><li><span class="pin"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span><b class="en">Recorded</b><span>المحاضرة متسجّلة وتذاكرها في وقتك</span></li><li><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-12 7l-5 1 1-4a8 8 0 1 1 16-4z"/></svg></span><b class="en">Live Follow-up</b><span>جلسة متابعة مع المحاضر: مراجعة وأسئلة</span></li><li><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></span><b class="en">Task</b><span>مهمة عملية على نفس الموضوع</span></li></ol><ul class="facts-l"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>محاضرات مسجّلة لكل فصل، ومعاها جلسة متابعة <span class="en">Live</span> كل أسبوع في يوم وموعد ثابتين</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>جلسة المتابعة من 2 لـ3 ساعات حسب أسئلة المتدربين</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>أسبوع راحة بين كل فصل والتالي</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>دعم مستمر على <span class="en">Niqat Help</span></span></li></ul></div>
       <h3 class="rv" style="margin:64px 0 8px">معايير النجاح</h3>
       <div class="figs sm2 rv" style="--c:3">
         <div class="fig"><b class="o">75%</b><span>نسبة الحضور المطلوبة</span></div>
@@ -687,7 +865,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
     <div class="side rv">
       <div class="eyebrow">09 · Project-N</div>
       <h2>خبرة عمل حقيقية <span class="o">قبل أول وظيفة</span></h2>
-      <p class="lead">بيئة هندسية محاكية حول مبنى احترافي صمّمه متخصصون خصيصًا لنقاط.</p>
+      <p class="lead">مشروع نقاط الخاص: مبنى حقيقي اتصمّم مخصوص للمتدربين، بيشتغلوا عليه في فرق زي بيئة الشغل جوه الشركات الهندسية.</p>
       <div class="netwrap"><svg class="net" viewBox="0 0 520 470" aria-hidden="true">
           <path class="ln" d="M260 235 L110 90"/><path class="ln" d="M260 235 L410 90"/><path class="ln" d="M260 235 L110 380"/><path class="ln" d="M260 235 L410 380"/>
           <g class="core"><circle class="b" cx="260" cy="235" r="92"/><circle class="a" cx="260" cy="235" r="72"/><text x="260" y="230" font-size="26">CDE</text><text x="260" y="258" font-size="15">ACC · ISO 19650</text></g>
@@ -699,10 +877,11 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
     </div>
     <div>
       <p class="lead rv">يحصل المتدرب على ملفات <span class="en">CAD</span> و<span class="en">Revit</span> والنوتة الحسابية للمبنى، وتنفّذ الفرق متعددة التخصصات دورة <span class="en">BIM</span> كاملة وفق <span class="en">ISO 19650</span> على بيئة بيانات مشتركة (<span class="en">ACC</span>)، حتى نموذج جاهز للتسليم.</p>
-      <div class="figs sm2 rv" style="--c:3;margin-top:48px">
+      <div class="figs sm2 rv" style="--c:4;margin-top:48px">
+        <div class="fig"><b>7</b><span>نماذج تخصصية</span></div>
+        <div class="fig"><b>19</b><span>مهندسًا في الفريق</span></div>
+        <div class="fig"><b>5</b><span>مراحل للمشروع</span></div>
         <div class="fig"><b class="o">6</b><span>شهور شهادة خبرة</span></div>
-        <div class="fig"><b>8–12</b><span>متدربًا في كل مجموعة</span></div>
-        <div class="fig"><b>4</b><span>تخصصات على نفس المبنى</span></div>
       </div>
       <div class="chk rv">
         <div>العمل ضمن فريق <span class="en">BIM</span> متعدد التخصصات</div>
@@ -716,6 +895,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
       </div>
     </div>
   </div>
+  <div class="wrap"><div class="zone pn-video rv"><div class="vh"><div><div class="k en">PROJECT-N · NIQAT PROJECT</div><h3>المشروع اللي <span class="o">المتدربين بيشتغلوا عليه</span></h3><p>مش مشروع جاهز من النت: ده مبنى نقاط اتعمل مخصوص لـ <span class="en">Project-N</span>. الفريق بيشتغل عليه بأدوار محددة، ويطبّق <span class="en">ISO 19650</span> على <span class="en">Autodesk Construction Cloud</span>، لحد ما يسلّم نموذج متكامل.</p></div><span class="own">مشروع خاص بنقاط</span></div><video controls preload="none" playsinline poster="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/project-n-poster.jpg"><source src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/project-n.mp4" type="video/mp4"></video><div class="mods"><span>نموذج المعماري</span><span>نموذج الإنشائي</span><span>نموذج التكييف</span><span>نموذج الحريق</span><span>نموذج الكهرباء (باور وإنارة)</span><span>نموذج التغذية</span><span>نموذج الصرف</span></div></div></div>
 </section>
 
 <section class="sec white" id="help" data-ch="3">
@@ -766,7 +946,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
         <div class="row"><span class="n en">02</span><div><h3>تقييم مستقل</h3><p>امتحان أونلاين أو مراجعة دقيقة لمشروع المتدرب من فريق التعليم.</p></div></div>
         <div class="row"><span class="n en">03</span><div><h3>اعتماد موثّق</h3><p>رقم اعتماد فريد يمكن لأي شركة التحقق منه.</p></div></div>
       </div>
-      <div class="tintbox rv" style="margin-top:40px"><div class="dotlist"><span class="it">شهادة <span class="en">Autodesk</span> مع دبلومات <span class="en">Full BIM</span></span><span class="it">مركز اختبارات <span class="en">Certiport</span> معتمد</span><span class="it">مساران للحصول على الاعتماد</span></div></div>
+      <div class="adsk-cert rv"><span class="tag">مع كل الدبلومات</span><span class="lg swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/autodesk-black.png" alt="Autodesk Learning Partner"><span class="fb en">AUTODESK</span></span><div><div class="k en">AUTODESK CERTIFICATE</div><h3>شهادة <span class="en">Autodesk</span> مع دبلومات نقاط</h3><p>كل دبلومة على برامج <span class="en">Autodesk</span> معاها شهادة إتمام معتمدة من <span class="en">Autodesk</span> جنب شهادة نقاط، ودبلومات <span class="en">Full BIM</span> فيها 4 شهادات: 2 من <span class="en">Autodesk</span> و2 من نقاط. ده من خلال شراكة <span class="en">Autodesk Learning Partner</span> من +10 سنين.</p></div></div><div class="tintbox rv" style="margin-top:16px"><div class="dotlist"><span class="it">مركز اختبارات <span class="en">Certiport</span> معتمد</span><span class="it">مساران للحصول على الاعتماد</span></div></div>
     </div>
   </div>
 </section>
@@ -784,6 +964,27 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
     <a class="wlink rv" href="https://www.niqatwork.com/" target="_blank" rel="noopener">niqatwork.com ←</a>
   </div>
 </section>
+<section class="sec white" id="reviews" data-ch="4">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="eyebrow">13 · Graduates</div>
+      <h2>خريجين نقاط <span class="o">بيقولوا إيه</span>؟</h2>
+    </div>
+    <div class="quotes"><div class="q"><p>الرحلة كلها أعطتني فهمًا متكاملًا لدورة عمل البيم من البداية للنهاية: من النمذجة والتوثيق إلى التخطيط وضبط التكاليف والإدارة والتنسيق بين التخصصات. شكرًا لفريق نقاط على التدريب الرائع والدعم المستمر من أول يوم حتى خط النهاية.</p><div class="wh"><b>Mahmoud Nasser, PMP</b><small>Mechanical Engineering Consultant — دبلومة البيم الشاملة · ميكانيكا</small></div></div><div class="q"><p>جاء هذا الاعتماد بعد برنامج تدريبي مكثف، ركّز على فهم تكوينات ومفاهيم ومصطلحات وعمليات BIM، وربطها بتطبيقاتها العملية في سوق العمل وفق المعايير والمنهجيات العالمية المعتمدة. كل الشكر لنقاط والمهندسين رأفت الجزار وأحمد القوصي وأحمد فكري وجميع مهندسي نقاط على هذا المحتوى المهني الرائع.</p><div class="wh"><b>Mai Mahmoud</b><small>Consultant Architect · Lead Architect at Lotus Engineering — دبلومة البيم الشاملة · معماري</small></div></div><div class="q"><p>عززت هذه الرحلة مهاراتي التقنية وعمّقت فهمي لدورة عمل البيم وعمليات التنسيق وربط مراحل دورة حياة المشروع. أتطلع لتطبيق هذه المعرفة في مشاريع حقيقية ومواصلة النمو في مجال البيم.</p><div class="wh"><b>Marwa Abdallah</b><small>BIM Coordinator — دبلومة البيم الشاملة · ميكانيكا</small></div></div><div class="q"><p>خلال هذه الرحلة اكتسبت خبرة عملية في Revit MEP، تشمل نمذجة أنظمة التكييف والحريق والصحي وإخراج اللوحات الميكانيكية، كما طوّرت فهمي لتنسيق البيم باستخدام Navisworks واكتشاف التعارضات وتوثيق البيم وإدارته وتسليم المهام عبر ACC.</p><div class="wh"><b>Hisham Magdy</b><small>Mechanical BIM Engineer — دبلومة البيم الشاملة · ميكانيكا</small></div></div><div class="q"><p>لم تكن هذه الرحلة بالنسبة لي مجرد شهادات، بل كانت بناءً لفهم أعمق لنمذجة معلومات البناء وكيف تغيّر طريقتنا في النمذجة والتنسيق والتوثيق وتسليم المشاريع. كل التقدير لـ م. أحمد شوقي على مجهوده الكبير وعلمه القيّم وتفانيه طوال الرحلة.</p><div class="wh"><b>Mohammed Omer, PMP, LEED GA</b><small>Mechanical Engineer — دبلومة الريفيت · ميكانيكا</small></div></div><div class="q"><p>شكرًا لـ م. أحمد شوقي، فأسلوبه العملي القائم على المشاريع هو ما صنع الفرق بين تعلّم البرنامج وفهم دورة العمل.</p><div class="wh"><b>Mahmoud Ahmed</b><small>MEP BIM Modeler | HVAC | Firefighting | Plumbing — دبلومة الريفيت · ميكانيكا</small></div></div><div class="q"><p>م. أحمد شوقي كان معلمًا رائعًا وصبورًا، لم يترك نقطة ولم يبخل بفكرة. منحني الترمان خبرة عملية في بناء نماذج MEP منسّقة، وفهمًا لامتداد دورة عمل البيم من النمذجة إلى التنسيق والتوثيق والكميات والتعاون.</p><div class="wh"><b>Muhamad Elassar</b><small>Mechanical Engineer at The Arab Contractors Company — دبلومة الريفيت · ميكانيكا</small></div></div><div class="q"><p>كمهندسة بيم ميكانيكا، كان هذا الكورس خطوة ممتازة في تطوير مهاراتي في التنسيق وفهم دورة عمل البيم الكاملة بين فرق MEP والمعماري والإنشائي. أقدّر لنقاط هذا المحتوى القيّم والمنظّم.</p><div class="wh"><b>Marwa Abdallah</b><small>BIM Coordinator — كورس BIM Coordination</small></div></div><div class="q"><p>حابب أشارككم حصولي على هذه الشهادات الرائعة والمميزة من نقاط. برغم خبرتي في المجال كان عندي ثقة دايمًا إني هسمع في نقاط معلومات جديدة وقيمة، وبالفعل حصل ده بسبب المحاضرين القديرين والمحترمين جدًا.</p><div class="wh"><b>Hassan Al-Emary</b><small>Structural BIM Specialist | BIM Automation Developer — دبلومة الريفيت · إنشائي</small></div></div><div class="q"><p>سعيدة بمشاركة محطة جديدة في رحلتي مع البيم: تحدٍّ تحوّل إلى إنجاز حقيقي في المرحلة الأولى (تسليم 50%) من المشروع التجريبي لنقاط. عملت كمنمذجة البيم الميكانيكي الوحيدة في فريق MEP وكأخصائية MEP BIM، وكان الجمع بين الدورين تحديًا جديدًا نجحت فيه.</p><div class="wh"><b>Howayda Tarek</b><small>Senior Firefighting and Plumbing Engineer at EMDEG — Project N</small></div></div><div class="q"><p>بفضل الله وتوفيقه بعد تجربة استمرت 10 شهور من التطوير في مجال BIM track مع مؤسسة نقاط، أدّت هذه التجربة إلى صقل مهاراتي في: فهم ISO 19650، وإعداد مستندات البيم (OIR وEIR وPIR وBEP)، والتعامل مع معايير openBIM (IFC وMVD وCOBie)، والتعامل مع أبعاد البيم (3D و4D و5D و6D).</p><div class="wh"><b>Ahmed Amer</b><small>Senior BIM Coordinator @TGC | Autodesk Certified Instructor — دبلومة البيم الشاملة</small></div></div><div class="q"><p>عززت هذه الشهادات معرفتي بدورة عمل البيم والنمذجة الإنشائية والتنسيق والتوثيق وتنفيذ المشاريع، وطوّرت قدرتي على ربط التصميم الرقمي بالإشراف والتنفيذ الفعلي في الموقع.</p><div class="wh"><b>Ahmed Metwally</b><small>Technical Office | Structural Engineer — المكتبة الإنشائية</small></div></div><div class="q"><p>لم يكن مجرد استعراض عام، بل نظرة عملية على كيف يعيد Forma Build تنظيم تسليم المشروع: طلبات الاستيضاح والاعتمادات والمشاكل وإدارة المستندات، كلها مترابطة وقابلة للتتبع في منصة واحدة. وخرجت منه بفهم أين تخسر فرق التنفيذ الوقت والثقة، وكيف تسد الأدوات السحابية هذه الفجوات حين تُطبَّق بشكل صحيح.</p><div class="wh"><b>Mohamed Khalaf</b><small>BIM Infrastructure Engineer | BIM Automation — كورس Forma Build</small></div></div><div class="q"><p>كانت هذه الرحلة العملية فرصة مثالية لتطوير مهاراتي في المكتب الفني وإتقان أهم مسارات عمل البيم: إنشاء العائلات البارامترية، والتنسيق المكاني، ومسارات حوامل الكابلات. شكرًا كبيرًا للمحاضرين المتميزين وفريق نقاط؛ دعمكم المستمر وملاحظاتكم وخبرتكم العملية جعلت هذه التجربة نقطة تحول حقيقية.</p><div class="wh"><b>Mohammed Elhalfawy</b><small>Electrical Technical Office Engineer — دبلومة الريفيت · كهرباء</small></div></div><div class="q"><p>كل التقدير لـ م. أحمد طارق الشربيني على توجيهه القيّم وتقديمه محتوى عميقًا قائمًا على الخبرة، يربط بفاعلية بين الجانبين التقني والهندسي.</p><div class="wh"><b>Eman Mohamed</b><small>Electrical Design Engineer | Dry Utilities Engineer — دبلومة الريفيت · كهرباء</small></div></div><div class="q"><p>كانت برامج تدريبية مكثفة ومثرية، مكّنتني من تطوير مهاراتي في الإدارة والنمذجة والتوثيق بتقنيات الـ BIM بكفاءة واحترافية عالية. أتوجه بجزيل الشكر والتقدير لنقاط على دعمهم المستمر، وتوفير بيئة تعليمية محفزة تشجع على المثابرة والتعلم المستمر.</p><div class="wh"><b>Ali Ibrahim Farid</b><small>Senior BIM Modeler — دبلومة البيم الشاملة · كهرباء</small></div></div><div class="q"><p>هذه التجربة تغيّر بالفعل طريقتي في التنسيق بين التخصصات، وإدارة دورة عمل البيم لا مجرد بناء النماذج، وتطبيق المعايير في بيئة مشاريع حقيقية، واستخدام البيم أداةً لاتخاذ قرارات أفضل. الهدف واضح: ليس النمذجة فقط، بل الإدارة والقيادة والتحسين.</p><div class="wh"><b>Mohamed Ali</b><small>Electrical Design Engineer | Electrical BIM Engineer — دبلومة البيم الشاملة · كهرباء</small></div></div><div class="q"><p>القيمة الحقيقية لم تكن في بناء الشكل فقط، بل في توظيف التصميم البارامتري لبناء نماذج مرنة وعالية الجودة تلتزم بمعايير البيم بدقة. شكرًا لـ م. رأفت الجزار وم. أحمد القوصي وم. أحمد طارق الشربيني على التوجيه العملي والدعم المستمر.</p><div class="wh"><b>Omar Nabil</b><small>BIM Technical Office Engineer — دبلومة الريفيت · كهرباء</small></div></div><div class="q"><p>الرحلة مش مجرد استخدام للأدوات في الـ Civil 3D أو الـ Inventor أو الـ Subassembly Composer والـ Navisworks. دي حكاية كبيرة وطريق للاستدامة والنمذجة من خلال الـ BIM، لأن الـ BIM مش مجرد برنامج، ده قصة كبيرة وراها رؤية مختلفة تمامًا الهدف منها هو تخفيف الضغط على كل فريق العمل من خلال التنسيق الذكي وتقليل المشاكل.</p><div class="wh"><b>Ibrahim Kazamel</b><small>Infrastructure BIM Coordinator | Technical Office BIM Coordinator — دبلومة البنية التحتية</small></div></div><div class="q"><p>خلال هذه المرحلة طبّقنا معايير دولية صارمة لمسارات العمل التعاونية في البيم وهيكلة البيانات وتسليم المشاريع. شكرًا كبيرًا لكل المحاضرين والمرشدين الذين دعمونا وشاركونا علمهم ووجّهونا طوال هذه المرحلة.</p><div class="wh"><b>Eman Nabil</b><small>Infrastructure Engineer at Trojan Construction Holding — دبلومة البيم الشاملة · بنية تحتية</small></div></div><div class="q"><p>عزز التدريب العملي فهمي لنمذجة البنية التحتية ثلاثية الأبعاد والتوثيق الفني ومسارات حصر الكميات وتنسيق النماذج. شكر خاص لـ م. محمود السيد وم. أحمد علي وم. عبد الفتاح الشبراوي على توجيههم القيّم وأسلوبهم العملي ومجهودهم طوال البرنامج.</p><div class="wh"><b>Hesham Abdelhay</b><small>Senior Digital Engineering Engineer | BIM (Revit Structure &amp; Rebar Detailing) — دبلومة البنية التحتية</small></div></div><div class="q"><p>أعتبر Project IN مشروع التخرج من الدبلومة، وأفضل طريقة لتطبيق كل المعرفة والمهارات المكتسبة وربط تعليم البيم بالخبرة الواقعية: تطبيق عملي على مشروع حقيقي من مرحلة مستندات البيم حتى الـ Close out.</p><div class="wh"><b>Mohja Abdelhamied</b><small>Architect &amp; BIM Specialist · Research Assistant · Instructor — Project N</small></div></div><div class="q"><p>منحتنا هذه التجربة فرصة قوية لتطبيق المعرفة النظرية في بيئة عمل حقيقية: عمل جماعي، وتنسيق بين التخصصات، والتعامل مع التحديات وحل التعارضات باحترافية. كانت رحلة مليئة بالتعلّم والتحديات، وأضافت لنا خبرة عملية قيّمة.</p><div class="wh"><b>Arwa Mekky</b><small>Senior Architectural Design · BIM Coordinator — Project N</small></div></div><div class="q"><p>رحلة مفيدة ورائعة في المشروع التجريبي لدبلومة البيم من نقاط، كمنسقة لفريق متعدد التخصصات: التنسيق الداخلي لكل التخصصات، والتنسيق بينها باستخدام Solibri، ومراجعة الـ Clash Matrix، وإدارة الملاحظات بملفات BCF، وصولًا إلى التسليم النهائي 100%.</p><div class="wh"><b>Linda Mohamed</b><small>Senior Technical Civil Engineer · BIM Structural Modeler &amp; Coordinator — Project N</small></div></div><div class="q"><p>النظرية رائعة، لكن تطبيقها على مشروع حقيقي بمعايير عالية هو ما يصنع التحول الحقيقي. وكان أكثر جزء مميز قيادة مراحل التنفيذ: النمذجة المتقدمة، ثم اكتشاف التعارضات والتنسيق على Navisworks لحل التعارضات بين التخصصات بكفاءة.</p><div class="wh"><b>Yassmen Aly, PMP, RMP</b><small>Chief Technical Office Engineer · Hassan Allam Construction (Metro Line 4) — Project N</small></div></div><div class="q"><p>من التخطيط للتسليم: نفّذنا سير عمل صارم متوافق مع المعايير الدولية، بداية من تحديد مستوى المعلومات (LOIN) على Plannerly، ثم النمذجة المشتركة على ACC، ثم التنسيق المتقدم وضبط الجودة، وصولًا لتسليم موديل موحّد. كان المشروع منحنى تعلّم كبير.</p><div class="wh"><b>Hossam A. Fathi</b><small>Structural BIM Engineer · Certified BIM Modeler — Project N</small></div></div></div>
+  </div>
+</section>
+<section class="sec gray" id="awards" data-ch="4">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="eyebrow">14 · Awards</div>
+      <h2>جوائز <span class="o">وتكريمات</span></h2>
+      <p class="lead">ذهبية وبرونزية من <span class="en">Big 5 Construct Egypt</span>، وتكريمات من <span class="en">Autodesk</span> على مدار السنين.</p>
+    </div>
+    <div class="awards"><div class="zone aw hot wide rv"><span class="tr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg></span><span class="by en">BIG 5 CONSTRUCT EGYPT</span><span class="yr en">2026</span><h3>الجائزة <span class="en">الذهبية</span> في <span class="en">Big 5 Construct Egypt</span></h3><p>نقاط خدت المركز الذهبي في أكبر معرض لقطاع البناء في مصر، بعد البرونزية في 2025.</p><span class="medal en">Gold Winner</span></div><div class="zone aw  rv"><span class="tr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg></span><span class="by en">BIG 5 CONSTRUCT EGYPT</span><span class="yr en">2025</span><h3 class="en" style="text-align:right">Best Exhibitor Marketing Campaign Award</h3><p>جائزة أفضل حملة تسويقية بين العارضين في المعرض.</p><span class="medal en">Bronze Winner</span></div><div class="zone aw  rv"><span class="tr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg></span><span class="by en">AUTODESK</span><span class="yr en">2016</span><h3>أفضل شريك تدريبي في الشرق الأوسط</h3><p>تكريم من <span class="en">Autodesk</span> كأفضل شريك تدريب في المنطقة.</p></div><div class="zone aw  rv"><span class="tr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg></span><span class="by en">AUTODESK</span><span class="yr en">2017</span><h3>أفضل شريك تدريبي في الشرق الأوسط</h3><p>للعام الثاني على التوالي.</p></div><div class="zone aw  rv"><span class="tr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg></span><span class="by en">AUTODESK</span><span class="yr en">2022</span><h3>جائزة التميّز</h3><p>جائزة التميّز من <span class="en">Autodesk</span> لشركائها التدريبيين.</p></div></div>
+  </div>
+</section>
+
+
 
 <!-- =============== CHAPTER 5 =============== -->
 <div class="chapter white" id="ch5" data-ch="5"><div class="wrap"><span class="cn en rv">05</span><div class="rv"><small class="en">CHAPTER FIVE</small><b>شركاء النجاح</b><p>الجهات التي وثقت في نقاط، وشركاؤنا الدوليون والأكاديميون.</p></div></div></div>
@@ -791,7 +992,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec white" id="clients" data-ch="5">
   <div class="wrap">
     <div class="head rv">
-      <div class="eyebrow">13 · Trusted By</div>
+      <div class="eyebrow">15 · Trusted By</div>
       <h2>جهات <span class="o">وثقت في نقاط</span></h2>
       <p class="lead">جزء من الشركات والجهات الحكومية والأكاديمية التي درّبت فرقها مع نقاط — من بين +200 شركة داخل مصر وخارجها.</p>
     </div>
@@ -809,18 +1010,18 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec gray" id="partners" data-ch="5">
   <div class="wrap split">
     <div class="side rv">
-      <div class="eyebrow">14 · Partners</div>
+      <div class="eyebrow">16 · Partners</div>
       <h2>شركاء <span class="o">واعتمادات دولية</span></h2>
       <p class="lead">شراكات تضمن أن ما نُدرّسه مطابق لما تعمل به الصناعة عالميًا.</p>
     </div>
     <div>
-      <div class="prow top rv"><span class="pn">AUTODESK</span><span class="rl">Learning Partner · +10 Years</span><p>شريك <span class="en">Autodesk</span> معتمد من +10 سنين، وشهادات <span class="en">Autodesk</span> ضمن دبلومات <span class="en">Full BIM</span>.</p></div>
-      <div style="border-top:2px solid var(--ink);margin-top:24px">
-        <div class="prow rv"><span class="pn">Certiport</span><span class="rl">Authorized Testing Center</span><p>مركز اختبارات معتمد.</p></div>
-        <div class="prow rv"><span class="pn">Plannerly</span><span class="rl">Authorized Training Center</span><p>مركز تدريب معتمد على منصة إدارة الـ <span class="en">BIM</span>.</p></div>
+      <div class="prow top rv"><span class="pn swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/autodesk-black.png" alt="Autodesk Learning Partner"><span class="fb">AUTODESK</span></span><span class="rl">Learning Partner · +10 Years</span><p>شريك <span class="en">Autodesk</span> معتمد من +10 سنين، وشهادة <span class="en">Autodesk</span> معتمدة مع دبلومات نقاط.</p></div>
+      <div class="plist">
+        <div class="prow rv"><span class="pn swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/certiport.png" alt="Certiport Authorized Testing Center"><span class="fb">Certiport</span></span><span class="rl">Authorized Testing Center</span><p>مركز اختبارات معتمد.</p></div>
+        <div class="prow rv"><span class="pn swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/plannerly.png" alt="Plannerly Authorized Training Center"><span class="fb">Plannerly</span></span><span class="rl">Authorized Training Center</span><p>مركز تدريب معتمد على منصة إدارة الـ <span class="en">BIM</span>.</p></div>
         <div class="prow rv"><span class="pn">CanBIM</span><span class="rl">Official Partner</span><p>شريك رسمي في مجتمع ومعايير الـ <span class="en">BIM</span> الدولية.</p></div>
-        <div class="prow rv"><span class="pn">Newforma Konekt</span><span class="rl">Official Partner</span><p>أدوات التنسيق وإدارة المشروعات.</p></div>
-        <div class="prow rv"><span class="pn">Building Transformations</span><span class="rl">International Partner</span><p>ضمن منظومة الاعتمادات.</p></div>
+        <div class="prow rv"><span class="pn swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/newforma-konekt.png" alt="Newforma Konekt"><span class="fb">Newforma Konekt</span></span><span class="rl">Official Partner</span><p>أدوات التنسيق وإدارة المشروعات.</p></div>
+        <div class="prow rv"><span class="pn swap"><img src="https://hhdklsjozvlikpwcahnf.supabase.co/storage/v1/object/public/media/partners/building-transformations.png" alt="Building Transformations"><span class="fb">Building Transformations</span></span><span class="rl">International Partner</span><p>ضمن منظومة الاعتمادات.</p></div>
         <div class="prow rv"><span class="pn">Coventry University</span><span class="rl">Academic Partner · TKH</span><p>بروتوكول تعاون أكاديمي.</p></div>
       </div>
     </div>
@@ -830,7 +1031,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec white" id="academia" data-ch="5">
   <div class="wrap">
     <div class="head rv">
-      <div class="eyebrow">15 · Academic Partnerships</div>
+      <div class="eyebrow">17 · Academic Partnerships</div>
       <h2>جسر بين <span class="o">الجامعة وسوق العمل</span></h2>
       <p class="lead">بروتوكولات تعاون مع كليات الهندسة والجهات المهنية، ضمن برنامج <b>سفراء نقاط</b> <span class="en">Niqat Ambassadors</span> — ببرنامج واضح لكل فئة.</p>
     </div>
@@ -840,7 +1041,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
       <div class="rv"><span class="k en">FACULTY</span><h3>لأعضاء هيئة التدريس</h3><ul><li>كورسات مجانية في أدوات الـ <span class="en">BIM</span> والـ <span class="en">CAD</span></li><li>من <span class="en">Revit</span> و<span class="en">Navisworks</span> و<span class="en">ACC</span> إلى <span class="en">Primavera</span> و<span class="en">COBie</span></li><li>تنسيق مشترك للفعاليات التعليمية</li></ul></div>
     </div>
     <div class="steps4 rv">
-      <div><b class="en">STEP 01</b><h3>وثيقة نية تعاون</h3><p>توقيع وثيقة مشتركة بين الطرفين.</p></div>
+      <div><b class="en">STEP 01</b><h3>بروتوكول تعاون</h3><p>توقيع بروتوكول تعاون مشترك بين الطرفين.</p></div>
       <div><b class="en">STEP 02</b><h3>مسؤول تواصل</h3><p>ترشيح من الجهة للتنسيق مع نقاط.</p></div>
       <div><b class="en">STEP 03</b><h3>تسجيل جماعي</h3><p><span class="en">Bulk Enroll</span> للطلاب والأكاديميين.</p></div>
       <div><b class="en">STEP 04</b><h3>فعاليات ومسابقات</h3><p>تُنظَّم بالتنسيق مع الكلية.</p></div>
@@ -852,7 +1053,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec gray" id="takweenat" data-ch="5">
   <div class="wrap split">
     <div class="side rv">
-      <div class="eyebrow">16 · Takweenat</div>
+      <div class="eyebrow">18 · Takweenat</div>
       <h2>التطبيق على أرض الواقع <span class="o">مع تكوينات</span></h2>
       <div class="tklogo swap" style="margin-top:28px"><img src="assets/takweenat-logo.png" alt="Takweenat — Beyond Architecture"><span class="fb en">Takweenat</span></div>
     </div>
@@ -870,7 +1071,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec white" id="events" data-ch="5">
   <div class="wrap split">
     <div class="side rv">
-      <div class="eyebrow">17 · Events</div>
+      <div class="eyebrow">19 · Events</div>
       <h2>حاضرون <span class="o">حيث تتشكّل الصناعة</span></h2>
       <p class="lead">معارض ومؤتمرات ومسابقات تربطنا بالسوق والجامعات.</p>
     </div>
@@ -903,9 +1104,12 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
       <div><small>الموقع الرسمي</small><b>niqatglobal.com</b></div>
       <div><small>تابعونا</small><b>@NiqatBE</b></div>
     </div>
+    <div class="zone follow rv"><h3>خلّيك قريب من <span class="o">نقاط</span></h3><p>تابعنا عشان توصلك أحدث الدبلومات والفعاليات ونصايح الكاريير أول بأول.</p><div class="soc"><a href="https://www.facebook.com/niqatbe" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3.1h-3V8.5c0-.9.3-1.5 1.6-1.5h1.6V4.2c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.3H7.9v3.1h2.6V21z"/></svg></a><a href="https://www.instagram.com/niqatbe" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.tiktok.com/@niqatbe" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 3c.4 2.2 1.8 3.7 4 3.9v3.1c-1.5 0-2.9-.4-4-1.2v6.3a5.7 5.7 0 1 1-5.7-5.7c.3 0 .6 0 .9.1v3.2a2.5 2.5 0 1 0 1.7 2.4V3z"/></svg></a><a href="https://www.youtube.com/@niqatbe" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></svg></a><a href="https://x.com/niqatbe" target="_blank" rel="noopener" aria-label="X" title="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg></a><a href="https://www.threads.com/@niqatbe" target="_blank" rel="noopener" aria-label="Threads" title="Threads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M17.5 8.5C16.6 5.6 14.6 4 12 4 7.6 4 5 7.2 5 12s2.6 8 7 8c3.5 0 6-2 6-4.8 0-2.7-2.3-4-5.2-4-2.6 0-4 1.2-4 2.7 0 1.4 1.2 2.4 2.9 2.4 2.6 0 3.9-2.2 3.6-6.5"/></svg></a><a href="https://www.snapchat.com/add/niqatbe" target="_blank" rel="noopener" aria-label="Snapchat" title="Snapchat"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3c2.9 0 5 2.2 5 5.1v2.3c.4.2 1 .1 1.5-.1.6-.2 1 .5.5.9-.5.3-1.3.6-1.8.8.6 1.6 1.8 2.8 3.4 3.4.5.2.4.8-.1 1-.6.2-1.3.3-1.9.5-.2.4 0 1-.5 1.1-.7.1-1.5-.2-2.4.1-1.2.4-2 1.6-3.7 1.6s-2.5-1.2-3.7-1.6c-.9-.3-1.7 0-2.4-.1-.5-.1-.3-.7-.5-1.1-.6-.2-1.3-.3-1.9-.5-.5-.2-.6-.8-.1-1 1.6-.6 2.8-1.8 3.4-3.4-.5-.2-1.3-.5-1.8-.8-.5-.4-.1-1.1.5-.9.5.2 1.1.3 1.5.1V8.1C7 5.2 9.1 3 12 3z"/></svg></a><a href="https://wa.me/201080223380" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-1.7-.1a15.6 15.6 0 0 1-1.5-.6 11.9 11.9 0 0 1-4.6-4c-.3-.5-1-1.5-1-2.8s.7-2 .9-2.3a1 1 0 0 1 .8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6a8.6 8.6 0 0 0 1.6 2 7.9 7.9 0 0 0 2.3 1.4c.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a><a href="https://www.niqatglobal.com/" target="_blank" rel="noopener" aria-label="Website" title="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></a></div></div>
   </div>
 </section>
 </main>
+
+<div class="mbar" id="mbar"><a class="mb-wa" href="https://wa.me/201080223380" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>كلّم فريق نقاط</span></a><button class="mb-sh" type="button" id="mbShare" aria-label="ابعت البورتفوليو لحد" title="ابعتها لحد"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button></div>
 
 <footer>
   <div class="wrap">
@@ -934,6 +1138,277 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;el.classList.add('in');io.unobserve(el);if(!reduce)el.querySelectorAll('[data-count]').forEach(count)}),{threshold:.08,rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('.rv').forEach(el=>{const sib=[...el.parentNode.children].filter(c=>c.classList.contains('rv'));el.style.transitionDelay=Math.min(sib.indexOf(el),6)*60+'ms';io.observe(el)});
   requestAnimationFrame(()=>document.querySelector('.hero').classList.add('in'));
+})();
+</script>
+<script>
+/* Niqat catalogs — reviews: turns the server-rendered #reviews cards into a rotating deck
+   (one card in front, the next ones stacked behind it), a side panel with the count and controls,
+   and a moving strip of reviewer names. Reads its data from the cards already in the page. */
+(function () {
+  'use strict';
+  var d = document, W = window;
+  if (W.__nqRv) return;
+  var sec = d.getElementById('reviews'); if (!sec) return;
+  var wrap = sec.querySelector('.wrap'), old = [].slice.call(sec.querySelectorAll('.quotes .q'));
+  if (!wrap || !old.length) return;
+  W.__nqRv = 1;
+
+  var RM = W.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var LAT = /[A-Za-z]/;
+  function clean(s) { return String(s || '').replace(/\s+/g, ' ').trim(); }
+  var items = old.map(function (q) {
+    var p = q.querySelector('p'), b = q.querySelector('.wh b'), s = q.querySelector('.wh small');
+    var t = clean(s && s.textContent), parts = t.split(' — ');
+    return { text: clean(p && p.textContent), name: clean(b && b.textContent), role: parts.length > 1 ? parts[0] : t, prod: parts.length > 1 ? parts.slice(1).join(' — ') : '' };
+  }).filter(function (x) { return x.text; });
+  var n = items.length; if (!n) return;
+
+  function ini(name) {
+    var w = name.replace(/,.*$/, '').replace(/^(م|Eng)\.\s*/i, '').trim().split(/\s+/);
+    var a = (w[0] || '').charAt(0), b = w.length > 1 ? w[w.length - 1].charAt(0) : '';
+    return LAT.test(a) ? (a + b).toUpperCase() : (a + (b ? ' ' + b : ''));
+  }
+  function el(tag, cls, txt) { var e = d.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  var LI = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.7 2.6 4.7 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg>';
+  var PREV = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  var NEXT = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  var PAUSE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>';
+  var PLAY = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10-6.5a1 1 0 0 0 0-1.72l-10-6.5A1 1 0 0 0 8 5.5z"/></svg>';
+
+  var css =
+    '#reviews.nqrv-on .quotes,#reviews.nqrv-on .wrap>.swipe{display:none!important}' +
+    '.nqrv,.nqrv *,.nqrv-names,.nqrv-names *{box-sizing:border-box}.nqrv>*{min-width:0}' +
+    '.nqrv{display:grid;grid-template-columns:minmax(240px,320px) minmax(0,1fr);gap:56px;align-items:center}' +
+    '.nqrv.solo{grid-template-columns:minmax(0,820px);justify-content:center}' +
+    '.nqrv-side{display:flex;flex-direction:column;gap:22px}' +
+    '.nqrv-count{display:flex;flex-direction:column;align-items:flex-start;gap:8px}' +
+    '.nqrv-count b{font-size:clamp(34px,3.6vw,46px);line-height:1.15;font-weight:700;color:#191919}.nqrv-count b::after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:#FF6600;margin-top:14px}' +
+    
+    '.nqrv-count span{font-size:17px;font-weight:500;line-height:1.6;color:#4A4A4A}' +
+    '.nqrv-src{display:inline-flex;align-items:center;gap:10px;font-size:14px;color:#4A4A4A;font-weight:500}' +
+    '.nqrv-src i{flex:none;width:28px;height:28px;border-radius:8px;background:#191919;color:#fff;display:grid;place-items:center}.nqrv-src svg{width:15px;height:15px}' +
+    '.nqrv-faces{display:flex;align-items:center;padding-inline-start:8px}' +
+    '.nqrv-faces span{width:42px;height:42px;border-radius:50%;margin-inline-start:-10px;display:grid;place-items:center;font-size:13px;font-weight:700;background:#191919;color:#FF6600;box-shadow:0 0 0 3px #fff;font-family:"Sora","Readex Pro",sans-serif}' +
+    '.nqrv-faces span:nth-child(2n){background:#FFE0CC;color:#191919}.nqrv-faces span.more{background:#FF6600;color:#000}' +
+    '.nqrv-ctrl{display:flex;align-items:center;gap:10px}' +
+    '.nqrv-ctrl button{all:unset;cursor:pointer;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#191919;box-shadow:inset 0 0 0 1.5px #191919;transition:background .2s,color .2s,transform .15s}' +
+    '.nqrv-ctrl button:hover{background:#191919;color:#fff}.nqrv-ctrl button:active{transform:scale(.94)}' +
+    '.nqrv-ctrl button:focus-visible{outline:3px solid #FF6600;outline-offset:3px}' +
+    '.nqrv-ctrl button.pp{width:40px;height:40px;box-shadow:none;background:#F4F3F1}.nqrv-ctrl button.pp:hover{background:#FFE0CC;color:#191919}' +
+    '.nqrv-ctrl svg{width:20px;height:20px}.nqrv-ctrl .pp svg{width:16px;height:16px}' +
+    '.nqrv-pos{font-family:"Sora","Readex Pro",sans-serif;font-weight:700;font-size:15px;color:#6B6B6B;min-width:70px;text-align:center;font-variant-numeric:tabular-nums;direction:ltr}.nqrv-pos b{color:#191919}' +
+    '.nqrv-stage{position:relative;touch-action:pan-y;outline:none;-webkit-user-select:none;user-select:none}' +
+    '.nqrv-stage:focus-visible .nqrv-card[data-k="0"]{box-shadow:0 0 0 3px #FF6600,0 40px 70px -40px rgba(0,0,0,.45)}' +
+    '.nqrv-card{position:absolute;inset-inline:0;top:40px;background:#fff;border-radius:28px;padding:40px 44px 30px;display:flex;flex-direction:column;box-shadow:0 0 0 1px #DDDAD5,0 30px 60px -40px rgba(0,0,0,.35);transform-origin:50% 0;transition:transform .7s cubic-bezier(.2,.8,.2,1),opacity .6s ease,box-shadow .4s ease;will-change:transform,opacity;overflow:hidden}' +
+    '.nqrv-card[data-k="0"]{z-index:5;transform:none;opacity:1;box-shadow:0 0 0 1px #DDDAD5,0 40px 70px -40px rgba(0,0,0,.45)}' +
+    '.nqrv-card[data-k="1"]{z-index:4;transform:translateY(-20px) scale(.95);opacity:1;cursor:pointer;background:#F7F6F4}' +
+    '.nqrv-card[data-k="2"]{z-index:3;transform:translateY(-38px) scale(.9);opacity:.75;background:#EFEDEA}' +
+    '.nqrv-card[data-k="3"]{z-index:2;transform:translateY(-50px) scale(.86);opacity:0;pointer-events:none}' +
+    '.nqrv-card.out-n{z-index:6!important;transform:translate(-75%,28px) rotate(-7deg)!important;opacity:0!important;transition-duration:.65s,.5s}' +
+    '.nqrv-card.out-p{z-index:6!important;transform:translate(75%,28px) rotate(7deg)!important;opacity:0!important;transition-duration:.65s,.5s}' +
+    '.nqrv-card:not([data-k="0"]) .nqrv-in{opacity:0}' +
+    '.nqrv-in{display:flex;flex-direction:column;flex:1;gap:18px;transition:opacity .45s ease .12s}' +
+    '.nqrv-card[data-k="0"] .nqrv-in{opacity:1}' +
+    '.nqrv-qm{position:absolute;inset-inline-end:30px;top:-14px;font-family:Georgia,serif;font-size:170px;line-height:1;color:#FF6600;opacity:.16;pointer-events:none}' +
+    '.nqrv-prod{align-self:flex-start;font-size:13px;font-weight:600;color:#191919;background:#FFE0CC;border-radius:99px;padding:5px 14px}' +
+    '.nqrv-q{margin:auto 0;font-size:clamp(17px,1.6vw,20px);line-height:1.95;color:#191919;font-weight:400;text-wrap:pretty}' +
+    '.nqrv-who{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid #ECEBE9}' +
+    '.nqrv-av{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#191919;color:#FF6600;font-weight:700;font-size:16px;font-family:"Sora","Readex Pro",sans-serif;box-shadow:0 0 0 3px #fff,0 0 0 5px #FF6600}' +
+    '.nqrv-who div{min-width:0;flex:1}.nqrv-who b{display:block;font-weight:700;font-size:16px;color:#191919}.nqrv-who small{display:block;font-size:13.5px;color:#6B6B6B;margin-top:2px}' +
+    '.nqrv-li{flex:none;width:34px;height:34px;border-radius:9px;background:#F4F3F1;color:#191919;display:grid;place-items:center}.nqrv-li svg{width:17px;height:17px}' +
+    '.nqrv-bar{position:absolute;inset-inline:0;bottom:0;height:4px;background:#F4F3F1}' +
+    '.nqrv-bar i{display:block;height:100%;width:100%;background:#FF6600;transform:scaleX(0);transform-origin:right}' +
+    '.nqrv-card[data-k="0"].run .nqrv-bar i{animation:nqrvP var(--nqrv-d,7s) linear forwards}' +
+    '.nqrv.paused .nqrv-bar i{animation-play-state:paused!important}' +
+    '@keyframes nqrvP{to{transform:scaleX(1)}}' +
+    '.nqrv-names{direction:ltr;margin-top:56px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}' +
+    '.nqrv-track{display:flex;width:max-content;gap:12px;direction:ltr;animation:nqrvM var(--nqrv-m,60s) linear infinite}' +
+    '.nqrv-names:hover .nqrv-track{animation-play-state:paused}' +
+    '@keyframes nqrvM{to{transform:translateX(-50%)}}' +
+    '.nqrv-nm{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 8px;border-radius:99px;background:#fff;box-shadow:0 0 0 1px #DDDAD5;white-space:nowrap;font-size:14px;font-weight:600;color:#191919;transition:box-shadow .2s,background .2s}' +
+    '.nqrv-nm span{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#191919;color:#FF6600;font-size:11px;font-weight:700;font-family:"Sora","Readex Pro",sans-serif}' +
+    '.nqrv-nm:hover,.nqrv-nm.on{box-shadow:0 0 0 2px #FF6600}.nqrv-nm.on{background:#FFE0CC}' +
+    '.nqrv-nm:focus-visible{outline:3px solid #FF6600;outline-offset:2px}' +
+    '.sec.alt .nqrv-card[data-k="1"]{background:#F7F6F4}' +
+    '@media (max-width:900px){.nqrv{grid-template-columns:1fr;gap:28px}.nqrv-side{display:grid;grid-template-columns:1fr auto;align-items:center;gap:14px 16px}' +
+      '.nqrv-count{grid-column:1/-1}.nqrv-count b{font-size:32px}.nqrv-count span{font-size:15px}.nqrv-faces{display:none}.nqrv-src{grid-column:1}.nqrv-ctrl{grid-column:2}' +
+      '.nqrv-card{padding:30px 22px 24px;border-radius:22px;top:30px}.nqrv-card[data-k="1"]{transform:translateY(-15px) scale(.95)}.nqrv-card[data-k="2"]{transform:translateY(-28px) scale(.9)}' +
+      '.nqrv-qm{font-size:130px;inset-inline-end:16px}.nqrv-q{font-size:16.5px;line-height:1.9}.nqrv-av{width:44px;height:44px;font-size:14px}.nqrv-names{margin-top:36px}}' +
+    '@media (max-width:520px){.nqrv-side{grid-template-columns:1fr}.nqrv-src,.nqrv-ctrl{grid-column:1}.nqrv-ctrl{justify-content:flex-start}}' +
+    '@media (prefers-reduced-motion:reduce){.nqrv-card,.nqrv-in{transition:opacity .2s!important}.nqrv-card[data-k="1"],.nqrv-card[data-k="2"]{transform:none;opacity:0}.nqrv-card.out-n,.nqrv-card.out-p{transform:none!important}' +
+      '.nqrv-track{animation:none}.nqrv-names{overflow-x:auto}.nqrv-bar{display:none}}';
+  var st = el('style'); st.id = 'nq-rv'; st.textContent = css; d.head.appendChild(st);
+
+  /* build */
+  var root = el('div', 'nqrv' + (n === 1 ? ' solo' : ''));
+  var side = el('div', 'nqrv-side');
+  var cnt = el('div', 'nqrv-count'); cnt.appendChild(el('b', '', 'آراء حقيقية')); cnt.appendChild(el('span', '', 'جزء من آراء متدربين وخريجين نقاط'));
+  var src = el('div', 'nqrv-src'); var ic = el('i'); ic.innerHTML = LI; src.appendChild(ic); src.appendChild(el('span', '', 'كلها من منشوراتهم العلنية على LinkedIn'));
+  var faces = el('div', 'nqrv-faces'); faces.setAttribute('aria-hidden', 'true');
+  items.slice(0, 5).forEach(function (x) { faces.appendChild(el('span', '', ini(x.name))); });
+  var ctrl = el('div', 'nqrv-ctrl');
+  var bPrev = el('button'); bPrev.type = 'button'; bPrev.innerHTML = PREV; bPrev.setAttribute('aria-label', 'الرأي اللي قبله');
+  var pos = el('span', 'nqrv-pos'); pos.setAttribute('aria-hidden', 'true');
+  var bNext = el('button'); bNext.type = 'button'; bNext.innerHTML = NEXT; bNext.setAttribute('aria-label', 'الرأي اللي بعده');
+  var bPP = el('button', 'pp'); bPP.type = 'button';
+  ctrl.appendChild(bPrev); ctrl.appendChild(bNext); if (!RM) ctrl.appendChild(bPP);
+  side.appendChild(cnt); side.appendChild(src); side.appendChild(faces); if (n > 1) side.appendChild(ctrl);
+
+  var stage = el('div', 'nqrv-stage');
+  stage.setAttribute('role', 'region'); stage.setAttribute('aria-roledescription', 'carousel'); stage.setAttribute('aria-label', 'آراء الخريجين');
+  if (n > 1) stage.tabIndex = 0;
+  var cards = items.map(function (x, i) {
+    var c = el('article', 'nqrv-card'); c.setAttribute('role', 'group'); c.setAttribute('aria-roledescription', 'slide');
+    c.setAttribute('aria-label', 'رأي ' + (i + 1));
+    var inn = el('div', 'nqrv-in');
+    c.appendChild(el('span', 'nqrv-qm', '”')).setAttribute('aria-hidden', 'true');
+    if (x.prod) inn.appendChild(el('span', 'nqrv-prod', x.prod));
+    var bq = el('blockquote', 'nqrv-q'); bq.textContent = x.text; bq.setAttribute('dir', 'auto'); inn.appendChild(bq);
+    var who = el('div', 'nqrv-who');
+    var av = el('span', 'nqrv-av', ini(x.name)); av.setAttribute('aria-hidden', 'true'); who.appendChild(av);
+    var wd = el('div'); var nb = el('b', '', x.name); nb.setAttribute('dir', 'auto'); wd.appendChild(nb);
+    if (x.role) { var sm = el('small', '', x.role); sm.setAttribute('dir', 'auto'); wd.appendChild(sm); }
+    who.appendChild(wd);
+    var li = el('span', 'nqrv-li'); li.innerHTML = LI; li.title = 'LinkedIn'; who.appendChild(li);
+    inn.appendChild(who); c.appendChild(inn);
+    if (n > 1 && !RM) { var bar = el('span', 'nqrv-bar'); bar.appendChild(el('i')); c.appendChild(bar); }
+    stage.appendChild(c); return c;
+  });
+  if (n > 1) root.appendChild(side);
+  root.appendChild(stage);
+
+  var names = null, chips = [];
+  if (n > 2) {
+    names = el('div', 'nqrv-names'); var tr = el('div', 'nqrv-track');
+    var addSet = function (hidden) {
+      items.forEach(function (x, i) {
+        var b = el('button', 'nqrv-nm'); b.type = 'button'; if (hidden) { b.tabIndex = -1; b.setAttribute('aria-hidden', 'true'); }
+        b.appendChild(el('span', '', ini(x.name))); b.appendChild(d.createTextNode(x.name));
+        b.addEventListener('click', function () { go(i, i > cur ? 1 : -1, true); });
+        tr.appendChild(b); chips.push(b);
+      });
+    };
+    addSet(false);
+    names.appendChild(tr);
+  }
+  var q0 = sec.querySelector('.quotes'); q0.parentNode.insertBefore(root, q0);
+  if (names) q0.parentNode.insertBefore(names, q0);
+  sec.classList.add('nqrv-on');
+  /* names strip: repeat the list until one half is wider than the strip, then double it for a seamless loop */
+  if (names) {
+    var one = tr.scrollWidth || 1, reps = Math.max(1, Math.ceil((names.clientWidth + 40) / one));
+    for (var k = 1; k < reps * 2; k++) addSet(true);
+    tr.style.setProperty('--nqrv-m', Math.max(30, Math.round(one * reps / 45)) + 's');
+  }
+
+  /* sizing: every card as tall as the tallest one */
+  var PEEK = 40;
+  function size() {
+    PEEK = W.innerWidth <= 900 ? 30 : 40;
+    var mx = 0;
+    cards.forEach(function (c) { c.style.height = 'auto'; });
+    cards.forEach(function (c) { mx = Math.max(mx, c.offsetHeight); });
+    cards.forEach(function (c) { c.style.height = mx + 'px'; });
+    stage.style.height = (mx + (n > 1 ? PEEK : 0)) + 'px';
+    if (n === 1) cards[0].style.top = '0';
+  }
+
+  /* rotation */
+  var cur = 0, DUR = 7000, manualPause = false, hover = false, focus = false, visible = false, live = false;
+  root.style.setProperty('--nqrv-d', DUR + 'ms');
+  function render() {
+    cards.forEach(function (c, i) {
+      var k = (i - cur + n) % n; c.setAttribute('data-k', String(Math.min(k, 3)));
+      var front = k === 0; c.setAttribute('aria-hidden', front ? 'false' : 'true');
+      if ('inert' in c) c.inert = !front;
+      c.classList.remove('run');
+    });
+    pos.innerHTML = '<b>' + String(cur + 1).padStart(2, '0') + '</b> / ' + String(n).padStart(2, '0');
+    chips.forEach(function (b, j) { b.classList.toggle('on', j % n === cur); });
+    restart();
+  }
+  function restart() {
+    var c = cards[cur]; c.classList.remove('run'); void c.offsetWidth; if (n > 1 && !RM) c.classList.add('run');
+    sync();
+  }
+  function go(i, dir, user) {
+    i = (i + n) % n; if (i === cur) { if (user) restart(); return; }
+    var leaving = cards[cur];
+    leaving.classList.add(dir < 0 ? 'out-p' : 'out-n');
+    setTimeout(function () { leaving.classList.remove('out-n', 'out-p'); }, 650);
+    cur = i;
+    if (user && !live) { live = true; stage.setAttribute('aria-live', 'polite'); }
+    render();
+  }
+  function sync() {
+    var paused = RM || manualPause || hover || focus || !visible || d.hidden;
+    root.classList.toggle('paused', paused);
+    bPP.innerHTML = manualPause ? PLAY : PAUSE;
+    bPP.setAttribute('aria-label', manualPause ? 'تشغيل التقليب التلقائي' : 'إيقاف التقليب التلقائي');
+  }
+  cards.forEach(function (c, i) {
+    var bar = c.querySelector('.nqrv-bar i');
+    if (bar) bar.addEventListener('animationend', function () { if (i === cur) go(cur + 1, 1, false); });
+    c.addEventListener('click', function () { if (c.getAttribute('data-k') === '1') go(i, 1, true); });
+  });
+  bNext.addEventListener('click', function () { go(cur + 1, 1, true); });
+  bPrev.addEventListener('click', function () { go(cur - 1, -1, true); });
+  bPP.addEventListener('click', function () { manualPause = !manualPause; sync(); });
+  stage.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(cur + 1, 1, true); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); go(cur - 1, -1, true); }
+  });
+  var fine = W.matchMedia && matchMedia('(hover:hover) and (pointer:fine)').matches;
+  if (fine) { stage.addEventListener('mouseenter', function () { hover = true; sync(); }); stage.addEventListener('mouseleave', function () { hover = false; sync(); }); }
+  root.addEventListener('focusin', function () { focus = true; sync(); });
+  root.addEventListener('focusout', function () { setTimeout(function () { focus = root.contains(d.activeElement); sync(); }, 0); });
+  d.addEventListener('visibilitychange', sync);
+  /* swipe (RTL: finger to the right = next) */
+  var sx = 0, sy = 0, down = false;
+  stage.addEventListener('pointerdown', function (e) { down = true; sx = e.clientX; sy = e.clientY; }, { passive: true });
+  stage.addEventListener('pointerup', function (e) {
+    if (!down) return; down = false;
+    var dx = e.clientX - sx, dy = e.clientY - sy;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.2) go(cur + (dx > 0 ? 1 : -1), dx > 0 ? 1 : -1, true);
+  });
+  stage.addEventListener('pointercancel', function () { down = false; });
+  if ('IntersectionObserver' in W) new IntersectionObserver(function (es) { visible = es[0].isIntersecting; sync(); }, { threshold: .35 }).observe(stage);
+  else visible = true;
+
+  size(); render();
+  var rt; W.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(size, 150); });
+  if (d.fonts && d.fonts.ready) d.fonts.ready.then(size);
+  setTimeout(size, 1200);
+})();
+
+
+/* partners strip: hold on touch; floating bar + share */
+(function(){
+  var vp=document.querySelector('.pt-vp'),t;
+  if(vp){vp.addEventListener('touchstart',function(){clearTimeout(t);vp.classList.add('hold')},{passive:true});vp.addEventListener('touchend',function(){t=setTimeout(function(){vp.classList.remove('hold')},1800)},{passive:true});}
+  var bar=document.getElementById('mbar'),hero=document.querySelector('.hero'),ct=document.getElementById('contact');
+  if(bar){var f=function(){var y=scrollY,past=hero?y>hero.offsetTop+hero.offsetHeight*0.6:y>400,atC=ct&&y+innerHeight>ct.offsetTop+120;bar.classList.toggle('show',past&&!atC)};addEventListener('scroll',f,{passive:true});f();}
+  var sh=document.getElementById('mbShare');
+  if(sh)sh.addEventListener('click',function(){var u=location.href.split('#')[0],d={title:document.title,text:'بورتفوليو نقاط — Niqat · Beyond Education',url:u};
+    if(navigator.share){navigator.share(d).catch(function(){})}else if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){sh.classList.add('ok');sh.title='اتنسخ اللينك';setTimeout(function(){sh.classList.remove('ok');sh.title='ابعتها لحد'},1800)})}});
+})();
+
+/* hero journey: sync stations with the moving dot */
+(function(){
+  var jr=document.getElementById('jr'); if(!jr) return;
+  var svg=jr.querySelector('svg'), st=[].slice.call(jr.querySelectorAll('.jr-st')), C=document.getElementById('jrC'), K=document.getElementById('jrK'), L=document.getElementById('jrL');
+  var D=[['35,000+','متدرب وخريج اتدربوا مع نقاط'],['Project-N','مشروع حقيقي بفريق متعدد التخصصات'],['26','اعتمادًا مهنيًا قابلًا للتحقق'],['Niqat Work','دليل كفاءات BIM للشركات']];
+  var RM=matchMedia('(prefers-reduced-motion: reduce)').matches, cur=-1;
+  function set(i){ if(i===cur) return; cur=i; st.forEach(function(e,j){e.classList.toggle('on',j===i)}); C.classList.add('sw'); setTimeout(function(){K.textContent=D[i][0];L.textContent=D[i][1];C.classList.remove('sw')},280); }
+  if(RM){ if(svg.pauseAnimations) svg.pauseAnimations(); set(0); return; }
+  function tick(){ var t=(svg.getCurrentTime()%10)/10, i=-1; [0,.25,.5,.75].forEach(function(p,j){ if(t>=p-0.02&&t<=p+0.15) i=j; }); if(t>0.98) i=0; if(i>-1) set(i); requestAnimationFrame(tick); }
+  set(0); requestAnimationFrame(tick);
+})();
+/* journey timeline line */
+(function(){
+  var tl=document.getElementById('tline'); if(!tl) return;
+  if(!('IntersectionObserver' in window)){tl.classList.add('go');return;}
+  var io=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ tl.classList.add('go'); io.disconnect(); } },{threshold:.3}); io.observe(tl);
 })();
 </script>
 </body>
