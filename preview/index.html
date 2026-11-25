@@ -577,16 +577,15 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 .hero h1{font-size:clamp(40px,5.3vw,78px)}.hero h1 .l>span{white-space:nowrap}
 
 /* leadership (catalog instructor cards) */
-#leaders .team{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
-#leaders .mgr{flex:0 0 calc(25% - 12px);display:flex;flex-direction:column;align-items:center;text-align:center;padding:28px 16px;transition:transform .3s var(--ease),box-shadow .3s}
+#leaders .team{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px;padding-top:6px}
+#leaders .mgr{display:flex;flex-direction:column;align-items:center;text-align:center;padding:24px 8px 20px;transition:transform .3s var(--ease),box-shadow .3s}
 #leaders .mgr:hover{transform:translateY(-4px);box-shadow:0 0 0 1px #FF6600,0 24px 48px -28px rgba(255,102,0,.55)}
-#leaders .mgr .ph{width:112px;height:112px;border-radius:50%;flex:none;overflow:hidden;background:#FFE0CC;box-shadow:0 0 0 4px #fff,0 0 0 6px #FF6600;margin:6px 0 16px}
+#leaders .mgr .ph{width:88px;height:88px;border-radius:50%;flex:none;overflow:hidden;background:#FFE0CC;box-shadow:0 0 0 4px #fff,0 0 0 6px #FF6600;margin:6px 0 14px}
 #leaders .mgr .ph img{width:100%;height:100%;object-fit:cover;display:block;background:#ECEBE9}
-#leaders .mgr h3{margin:0 0 2px;font-size:19px;font-weight:800;white-space:nowrap}
-#leaders .mgr .tm-n{font-family:Sora,sans-serif;font-size:13px;font-weight:700;color:#FF6600;direction:ltr;unicode-bidi:isolate;white-space:nowrap}
-#leaders .mgr .tm-s{font-family:Sora,sans-serif;font-size:11.5px;font-weight:600;color:#808080;direction:ltr;unicode-bidi:isolate;white-space:nowrap;margin-top:2px}
-@media(max-width:900px){#leaders .mgr{flex-basis:calc(50% - 8px);padding:24px 10px}#leaders .mgr .ph{width:96px;height:96px}#leaders .mgr h3{font-size:16.5px}}
-@media(max-width:400px){#leaders .mgr .tm-s{white-space:normal}}
+#leaders .mgr h3{margin:0 0 2px;font-size:15px;font-weight:800;white-space:nowrap}
+#leaders .mgr .tm-n{font-family:Sora,sans-serif;font-size:11.5px;font-weight:700;color:#FF6600;direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+#leaders .mgr .tm-s{font-family:Sora,sans-serif;font-size:10.5px;font-weight:600;color:#808080;direction:ltr;unicode-bidi:isolate;white-space:nowrap;margin-top:2px}
+@media(max-width:1100px){#leaders .team{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 -20px;padding:6px 20px 14px}#leaders .team::-webkit-scrollbar{display:none}#leaders .mgr{flex:0 0 150px;scroll-snap-align:start}}
 
 #reviews .quotes{display:none}
 </style>
