@@ -575,6 +575,25 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 .aw .yr,.aw .by{text-align:right}
 .hero h1{font-size:clamp(40px,5.3vw,78px)}.hero h1 .l>span{white-space:nowrap}
 
+/* leadership (catalog instructor cards) */
+#leaders .team{display:grid;gap:16px;grid-template-columns:repeat(3,minmax(0,1fr))}
+#leaders .team.sm{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:16px}
+#leaders .mgr{display:flex;flex-direction:column;align-items:center;text-align:center;padding:30px 24px;transition:transform .3s var(--ease),box-shadow .3s}
+#leaders .mgr:hover{transform:translateY(-4px);box-shadow:0 0 0 1px #FF6600,0 24px 48px -28px rgba(255,102,0,.55)}
+#leaders .mgr .ph{width:124px;height:124px;border-radius:50%;flex:none;overflow:hidden;background:#FFE0CC;box-shadow:0 0 0 4px #fff,0 0 0 6px #FF6600;margin:6px 0 16px}
+#leaders .mgr .ph img{width:100%;height:100%;object-fit:cover;display:block;background:#ECEBE9}
+#leaders .mgr h3{margin:0 0 2px;font-size:21px;font-weight:800}
+#leaders .mgr .tm-n{font-family:Sora,sans-serif;font-size:13px;font-weight:700;color:#FF6600;direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+#leaders .mgr .tm-s{font-family:Sora,sans-serif;font-size:11.5px;font-weight:600;color:#808080;direction:ltr;unicode-bidi:isolate;white-space:nowrap;margin-top:2px}
+#leaders .mgr ul{margin:12px 0 0;padding:0;list-style:none;color:var(--muted);font-size:14.5px;display:grid;gap:4px;text-align:start;width:100%}
+#leaders .mgr li{padding-inline-start:14px;position:relative;line-height:1.6}
+#leaders .mgr li::before{content:"";position:absolute;inset-inline-start:0;top:.7em;width:6px;height:6px;border-radius:50%;background:#FF6600}
+#leaders .team.sm .mgr{padding:24px 16px}
+#leaders .team.sm .mgr .ph{width:104px;height:104px}
+#leaders .team.sm .mgr h3{font-size:18px}
+@media(max-width:900px){#leaders .team{grid-template-columns:1fr}#leaders .team.sm{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:400px){#leaders .team.sm .mgr .tm-s{white-space:normal}}
+
 #reviews .quotes{display:none}
 </style>
 </head>
@@ -634,7 +653,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
       <p class="lead">خمسة فصول تعرض نقاط من كل الجوانب.</p>
     </div>
     <div class="idx">
-      <a href="#ch1" class="rv"><span class="n en">01</span><h3>عن نقاط</h3><span class="sm">من نحن · رحلتنا · نقاط بالأرقام</span><span class="ar">←</span></a>
+      <a href="#ch1" class="rv"><span class="n en">01</span><h3>عن نقاط</h3><span class="sm">من نحن · رحلتنا · نقاط بالأرقام · القيادات</span><span class="ar">←</span></a>
       <a href="#ch2" class="rv"><span class="n en">02</span><h3>ماذا نقدم</h3><span class="sm">خدمات الشركات · الدبلومات المباشرة · التعلّم الذاتي · المكتبات والكورسات</span><span class="ar">←</span></a>
       <a href="#ch3" class="rv"><span class="n en">03</span><h3>كيف نعمل</h3><span class="sm">منهجية التعلّم · <span class="en">Project-N</span> · الدعم الفني</span><span class="ar">←</span></a>
       <a href="#ch4" class="rv"><span class="n en">04</span><h3>النتائج</h3><span class="sm">الاعتمادات المهنية · <span class="en">Niqat Work</span> · خريجين نقاط · الجوائز</span><span class="ar">←</span></a>
@@ -720,6 +739,18 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
     </div>
   </div>
 </section>
+<section class="sec gray" id="leaders" data-ch="1">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="eyebrow">04 · Leadership</div>
+      <h2>فريق <span class="o">يقود نقاط</span></h2>
+      <p class="lead">قيادات بتجمع بين الخبرة الهندسية في السوق وإدارة التعليم والتشغيل، ومعاهم +30 موظف و+60 محاضر متخصص.</p>
+    </div>
+    <div class="team"><div class="zone mgr rv"><div class="ph"><img src="assets/h-aq.webp" alt="م. أحمد القوصي" loading="lazy"></div><h3>م. أحمد القوصي</h3><small class="tm-n">Ahmad AlQuosi</small><small class="tm-s">CEO</small><ul><li>مهندس معماري وماجستير إدارة مشروعات البيم</li><li>من أوائل اللي طبّقوا البيم ودرّبوا عليه جوه مصر وبرّه</li></ul></div><div class="zone mgr rv"><div class="ph"><img src="assets/h-raafat.webp" alt="م. رأفت الجزار" loading="lazy"></div><h3>م. رأفت الجزار</h3><small class="tm-n">Raafat Al-Gazzar</small><small class="tm-s">Education Director</small><ul><li>مهندس مدني (إنشاءات)</li><li>المدير العام لقسم البيم في تكوينات الهندسية</li><li>استشاري تطبيق البيم في الشركات والجهات الحكومية</li></ul></div><div class="zone mgr rv"><div class="ph"><img src="assets/h-fekry.webp" alt="م. أحمد فكري" loading="lazy"></div><h3>م. أحمد فكري</h3><small class="tm-n">Ahmed Fekry</small><small class="tm-s">Education Manager</small><ul><li>مهندس ميكانيكا</li><li>مدير وحدة التنسيق في قسم البيم بتكوينات الهندسية</li><li>خبرة كبيرة في مشروعات في مصر والخليج</li></ul></div></div>
+    <div class="team sm"><div class="zone mgr rv"><div class="ph"><img src="assets/h-abdelkader.webp" alt="عبدالقادر رياض" loading="lazy"></div><h3>عبدالقادر رياض</h3><small class="tm-n">Abdelkader Reyad</small><small class="tm-s">Operations Manager</small></div><div class="zone mgr rv"><div class="ph"><img src="assets/h-hussein.webp" alt="محمد حسين" loading="lazy"></div><h3>محمد حسين</h3><small class="tm-n">Mohamed Hussein</small><small class="tm-s">Sales Director · B2B</small></div><div class="zone mgr rv"><div class="ph"><img src="assets/h-noha.webp" alt="نهى الندوري" loading="lazy"></div><h3>نهى الندوري</h3><small class="tm-n">Noha El-Nadoury</small><small class="tm-s">HR Manager</small></div><div class="zone mgr rv"><div class="ph"><img src="assets/h-esmat.webp" alt="أحمد عصمت" loading="lazy"></div><h3>أحمد عصمت</h3><small class="tm-n">Ahmed Esmat</small><small class="tm-s">IT Manager</small></div></div>
+  </div>
+</section>
+
 
 <!-- =============== CHAPTER 2 =============== -->
 <div class="chapter gray" id="ch2" data-ch="2"><div class="wrap"><span class="cn en rv">02</span><div class="rv"><small class="en">CHAPTER TWO</small><b>ماذا نقدم</b><p>خدمات الشركات، والدبلومات، والمكتبات والكورسات.</p></div></div></div>
@@ -727,7 +758,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec gray" id="services" data-ch="2">
   <div class="wrap split">
     <div class="side rv">
-      <div class="eyebrow">04 · Services</div>
+      <div class="eyebrow">05 · Services</div>
       <h2>حلول متكاملة <span class="o">لفريق شركتك</span></h2>
       <p class="lead">من التدريب إلى تطبيق الـ <span class="en">BIM</span> والاستشارات وتوفير الكفاءات — كل حل يُصمَّم حول احتياج الشركة.</p>
     </div>
@@ -755,7 +786,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec white" id="live" data-ch="2">
   <div class="wrap split">
     <div class="side rv">
-      <div class="eyebrow">05 · Live Diplomas</div>
+      <div class="eyebrow">06 · Live Diplomas</div>
       <h2>دبلومات <span class="o en">Full BIM</span> المباشرة</h2>
       <p class="lead">المسار الأشمل في نقاط: من نمذجة <span class="en">Revit</span> حتى <span class="en">BIM Management</span> و<span class="en">Coordination</span>، وينتهي بمشروع تخرج على <span class="en">Project-N</span>.</p>
     </div>
@@ -782,7 +813,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec gray" id="selfpaced" data-ch="2">
   <div class="wrap">
     <div class="head rv">
-      <div class="eyebrow">06 · Self-Paced Diplomas</div>
+      <div class="eyebrow">07 · Self-Paced Diplomas</div>
       <h2>10 دبلومات <span class="o">بالتعلّم الذاتي</span></h2>
       <p class="lead">محتوى مسجّل بالكامل يناسب المهندسين وفرق العمل ذات الجداول المرنة. تُسلَّم المهام في أي وقت، ويقيّمها فريق التعليم خلال 7–14 يومًا. كل دبلومة على ترمين، ومعظمها 16 محاضرة مسجّلة و48 جلسة.</p>
     </div>
@@ -808,7 +839,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec white" id="library" data-ch="2">
   <div class="wrap split">
     <div class="side rv">
-      <div class="eyebrow">07 · Libraries &amp; Courses</div>
+      <div class="eyebrow">08 · Libraries &amp; Courses</div>
       <h2>مكتبات <span class="en">BIM</span> <span class="o">و+46 كورسًا</span></h2>
       <p class="lead">محتوى مسجّل متاح في أي وقت على موقع وتطبيق نقاط، مع شهادة من نقاط لكل كورس عند إتمام 75% منه.</p>
     </div>
@@ -859,7 +890,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec gray" id="method" data-ch="3">
   <div class="wrap split">
     <div class="side rv">
-      <div class="eyebrow">08 · How We Teach</div>
+      <div class="eyebrow">09 · How We Teach</div>
       <h2>منظومة تعلّم <span class="o">مبنية على التطبيق</span></h2>
       <p class="lead">كل برنامج يمر بنفس الدورة: نتعلّم، ثم نطبّق، ثم نقيس.</p>
     </div>
@@ -885,7 +916,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec bp" id="project-n" data-ch="3">
   <div class="wrap split">
     <div class="side rv">
-      <div class="eyebrow">09 · Project-N</div>
+      <div class="eyebrow">10 · Project-N</div>
       <h2>خبرة عمل حقيقية <span class="o">قبل أول وظيفة</span></h2>
       <p class="lead">مشروع نقاط الخاص: مبنى حقيقي اتصمّم مخصوص للمتدربين، بيشتغلوا عليه في فرق زي بيئة الشغل جوه الشركات الهندسية.</p>
       <div class="netwrap"><svg class="net" viewBox="0 0 520 470" aria-hidden="true">
@@ -923,7 +954,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec white" id="help" data-ch="3">
   <div class="wrap split">
     <div class="side rv">
-      <div class="eyebrow">10 · Niqat Help</div>
+      <div class="eyebrow">11 · Niqat Help</div>
       <h2>دعم لا يتوقف <span class="o">عند انتهاء الدبلومة</span></h2>
       <p class="lead"><span class="en">Never get stuck.</span> جلسات فردية مجانية عبر <span class="en">Zoom</span> مع متخصصين — على <span class="en">niqathelp.com</span>.</p>
     </div>
@@ -952,7 +983,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec white" id="credentials" data-ch="4">
   <div class="wrap split">
     <div class="side rv">
-      <div class="eyebrow">11 · Niqat Credentials</div>
+      <div class="eyebrow">12 · Niqat Credentials</div>
       <h2>اعتماد مهني <span class="o">قابل للتحقق</span></h2>
       <p class="lead">26 اعتمادًا مهنيًا في الـ <span class="en">BIM</span> والرسم الهندسي والتصميم الداخلي والـ <span class="en">Visualization</span>. الاعتماد لا يُمنح بمجرد الحضور، بل بعد تقييم مستقل.</p>
     </div>
@@ -975,7 +1006,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 
 <section class="sec workband" id="work" data-ch="4">
   <div class="wrap">
-    <div class="eyebrow rv">12 · Niqat Work</div>
+    <div class="eyebrow rv">13 · Niqat Work</div>
     <div class="thc rv" style="margin-top:20px">Trained. <span class="o">Certified.</span> Hired.</div>
     <p class="lead rv" style="margin-top:24px;max-width:760px"><span class="en">The Hub for Elite BIM Talents</span> — دليل <span class="en">BIM</span> للشركات يضم كفاءات معتمدة من خريجي نقاط، بعضوية مجانية للخريجين وشارة توثيق على الملف.</p>
     <div class="wcols rv">
@@ -989,7 +1020,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec white" id="reviews" data-ch="4">
   <div class="wrap">
     <div class="head rv">
-      <div class="eyebrow">13 · Graduates</div>
+      <div class="eyebrow">14 · Graduates</div>
       <h2>خريجين نقاط <span class="o">بيقولوا إيه</span>؟</h2>
     </div>
     <div class="quotes"><div class="q"><p>الرحلة كلها أعطتني فهمًا متكاملًا لدورة عمل البيم من البداية للنهاية: من النمذجة والتوثيق إلى التخطيط وضبط التكاليف والإدارة والتنسيق بين التخصصات. شكرًا لفريق نقاط على التدريب الرائع والدعم المستمر من أول يوم حتى خط النهاية.</p><div class="wh"><b>Mahmoud Nasser, PMP</b><small>Mechanical Engineering Consultant — دبلومة البيم الشاملة · ميكانيكا</small></div></div><div class="q"><p>جاء هذا الاعتماد بعد برنامج تدريبي مكثف، ركّز على فهم تكوينات ومفاهيم ومصطلحات وعمليات BIM، وربطها بتطبيقاتها العملية في سوق العمل وفق المعايير والمنهجيات العالمية المعتمدة. كل الشكر لنقاط والمهندسين رأفت الجزار وأحمد القوصي وأحمد فكري وجميع مهندسي نقاط على هذا المحتوى المهني الرائع.</p><div class="wh"><b>Mai Mahmoud</b><small>Consultant Architect · Lead Architect at Lotus Engineering — دبلومة البيم الشاملة · معماري</small></div></div><div class="q"><p>عززت هذه الرحلة مهاراتي التقنية وعمّقت فهمي لدورة عمل البيم وعمليات التنسيق وربط مراحل دورة حياة المشروع. أتطلع لتطبيق هذه المعرفة في مشاريع حقيقية ومواصلة النمو في مجال البيم.</p><div class="wh"><b>Marwa Abdallah</b><small>BIM Coordinator — دبلومة البيم الشاملة · ميكانيكا</small></div></div><div class="q"><p>خلال هذه الرحلة اكتسبت خبرة عملية في Revit MEP، تشمل نمذجة أنظمة التكييف والحريق والصحي وإخراج اللوحات الميكانيكية، كما طوّرت فهمي لتنسيق البيم باستخدام Navisworks واكتشاف التعارضات وتوثيق البيم وإدارته وتسليم المهام عبر ACC.</p><div class="wh"><b>Hisham Magdy</b><small>Mechanical BIM Engineer — دبلومة البيم الشاملة · ميكانيكا</small></div></div><div class="q"><p>لم تكن هذه الرحلة بالنسبة لي مجرد شهادات، بل كانت بناءً لفهم أعمق لنمذجة معلومات البناء وكيف تغيّر طريقتنا في النمذجة والتنسيق والتوثيق وتسليم المشاريع. كل التقدير لـ م. أحمد شوقي على مجهوده الكبير وعلمه القيّم وتفانيه طوال الرحلة.</p><div class="wh"><b>Mohammed Omer, PMP, LEED GA</b><small>Mechanical Engineer — دبلومة الريفيت · ميكانيكا</small></div></div><div class="q"><p>شكرًا لـ م. أحمد شوقي، فأسلوبه العملي القائم على المشاريع هو ما صنع الفرق بين تعلّم البرنامج وفهم دورة العمل.</p><div class="wh"><b>Mahmoud Ahmed</b><small>MEP BIM Modeler | HVAC | Firefighting | Plumbing — دبلومة الريفيت · ميكانيكا</small></div></div><div class="q"><p>م. أحمد شوقي كان معلمًا رائعًا وصبورًا، لم يترك نقطة ولم يبخل بفكرة. منحني الترمان خبرة عملية في بناء نماذج MEP منسّقة، وفهمًا لامتداد دورة عمل البيم من النمذجة إلى التنسيق والتوثيق والكميات والتعاون.</p><div class="wh"><b>Muhamad Elassar</b><small>Mechanical Engineer at The Arab Contractors Company — دبلومة الريفيت · ميكانيكا</small></div></div><div class="q"><p>كمهندسة بيم ميكانيكا، كان هذا الكورس خطوة ممتازة في تطوير مهاراتي في التنسيق وفهم دورة عمل البيم الكاملة بين فرق MEP والمعماري والإنشائي. أقدّر لنقاط هذا المحتوى القيّم والمنظّم.</p><div class="wh"><b>Marwa Abdallah</b><small>BIM Coordinator — كورس BIM Coordination</small></div></div><div class="q"><p>حابب أشارككم حصولي على هذه الشهادات الرائعة والمميزة من نقاط. برغم خبرتي في المجال كان عندي ثقة دايمًا إني هسمع في نقاط معلومات جديدة وقيمة، وبالفعل حصل ده بسبب المحاضرين القديرين والمحترمين جدًا.</p><div class="wh"><b>Hassan Al-Emary</b><small>Structural BIM Specialist | BIM Automation Developer — دبلومة الريفيت · إنشائي</small></div></div><div class="q"><p>سعيدة بمشاركة محطة جديدة في رحلتي مع البيم: تحدٍّ تحوّل إلى إنجاز حقيقي في المرحلة الأولى (تسليم 50%) من المشروع التجريبي لنقاط. عملت كمنمذجة البيم الميكانيكي الوحيدة في فريق MEP وكأخصائية MEP BIM، وكان الجمع بين الدورين تحديًا جديدًا نجحت فيه.</p><div class="wh"><b>Howayda Tarek</b><small>Senior Firefighting and Plumbing Engineer at EMDEG — Project N</small></div></div><div class="q"><p>بفضل الله وتوفيقه بعد تجربة استمرت 10 شهور من التطوير في مجال BIM track مع مؤسسة نقاط، أدّت هذه التجربة إلى صقل مهاراتي في: فهم ISO 19650، وإعداد مستندات البيم (OIR وEIR وPIR وBEP)، والتعامل مع معايير openBIM (IFC وMVD وCOBie)، والتعامل مع أبعاد البيم (3D و4D و5D و6D).</p><div class="wh"><b>Ahmed Amer</b><small>Senior BIM Coordinator @TGC | Autodesk Certified Instructor — دبلومة البيم الشاملة</small></div></div><div class="q"><p>عززت هذه الشهادات معرفتي بدورة عمل البيم والنمذجة الإنشائية والتنسيق والتوثيق وتنفيذ المشاريع، وطوّرت قدرتي على ربط التصميم الرقمي بالإشراف والتنفيذ الفعلي في الموقع.</p><div class="wh"><b>Ahmed Metwally</b><small>Technical Office | Structural Engineer — المكتبة الإنشائية</small></div></div><div class="q"><p>لم يكن مجرد استعراض عام، بل نظرة عملية على كيف يعيد Forma Build تنظيم تسليم المشروع: طلبات الاستيضاح والاعتمادات والمشاكل وإدارة المستندات، كلها مترابطة وقابلة للتتبع في منصة واحدة. وخرجت منه بفهم أين تخسر فرق التنفيذ الوقت والثقة، وكيف تسد الأدوات السحابية هذه الفجوات حين تُطبَّق بشكل صحيح.</p><div class="wh"><b>Mohamed Khalaf</b><small>BIM Infrastructure Engineer | BIM Automation — كورس Forma Build</small></div></div><div class="q"><p>كانت هذه الرحلة العملية فرصة مثالية لتطوير مهاراتي في المكتب الفني وإتقان أهم مسارات عمل البيم: إنشاء العائلات البارامترية، والتنسيق المكاني، ومسارات حوامل الكابلات. شكرًا كبيرًا للمحاضرين المتميزين وفريق نقاط؛ دعمكم المستمر وملاحظاتكم وخبرتكم العملية جعلت هذه التجربة نقطة تحول حقيقية.</p><div class="wh"><b>Mohammed Elhalfawy</b><small>Electrical Technical Office Engineer — دبلومة الريفيت · كهرباء</small></div></div><div class="q"><p>كل التقدير لـ م. أحمد طارق الشربيني على توجيهه القيّم وتقديمه محتوى عميقًا قائمًا على الخبرة، يربط بفاعلية بين الجانبين التقني والهندسي.</p><div class="wh"><b>Eman Mohamed</b><small>Electrical Design Engineer | Dry Utilities Engineer — دبلومة الريفيت · كهرباء</small></div></div><div class="q"><p>كانت برامج تدريبية مكثفة ومثرية، مكّنتني من تطوير مهاراتي في الإدارة والنمذجة والتوثيق بتقنيات الـ BIM بكفاءة واحترافية عالية. أتوجه بجزيل الشكر والتقدير لنقاط على دعمهم المستمر، وتوفير بيئة تعليمية محفزة تشجع على المثابرة والتعلم المستمر.</p><div class="wh"><b>Ali Ibrahim Farid</b><small>Senior BIM Modeler — دبلومة البيم الشاملة · كهرباء</small></div></div><div class="q"><p>هذه التجربة تغيّر بالفعل طريقتي في التنسيق بين التخصصات، وإدارة دورة عمل البيم لا مجرد بناء النماذج، وتطبيق المعايير في بيئة مشاريع حقيقية، واستخدام البيم أداةً لاتخاذ قرارات أفضل. الهدف واضح: ليس النمذجة فقط، بل الإدارة والقيادة والتحسين.</p><div class="wh"><b>Mohamed Ali</b><small>Electrical Design Engineer | Electrical BIM Engineer — دبلومة البيم الشاملة · كهرباء</small></div></div><div class="q"><p>القيمة الحقيقية لم تكن في بناء الشكل فقط، بل في توظيف التصميم البارامتري لبناء نماذج مرنة وعالية الجودة تلتزم بمعايير البيم بدقة. شكرًا لـ م. رأفت الجزار وم. أحمد القوصي وم. أحمد طارق الشربيني على التوجيه العملي والدعم المستمر.</p><div class="wh"><b>Omar Nabil</b><small>BIM Technical Office Engineer — دبلومة الريفيت · كهرباء</small></div></div><div class="q"><p>الرحلة مش مجرد استخدام للأدوات في الـ Civil 3D أو الـ Inventor أو الـ Subassembly Composer والـ Navisworks. دي حكاية كبيرة وطريق للاستدامة والنمذجة من خلال الـ BIM، لأن الـ BIM مش مجرد برنامج، ده قصة كبيرة وراها رؤية مختلفة تمامًا الهدف منها هو تخفيف الضغط على كل فريق العمل من خلال التنسيق الذكي وتقليل المشاكل.</p><div class="wh"><b>Ibrahim Kazamel</b><small>Infrastructure BIM Coordinator | Technical Office BIM Coordinator — دبلومة البنية التحتية</small></div></div><div class="q"><p>خلال هذه المرحلة طبّقنا معايير دولية صارمة لمسارات العمل التعاونية في البيم وهيكلة البيانات وتسليم المشاريع. شكرًا كبيرًا لكل المحاضرين والمرشدين الذين دعمونا وشاركونا علمهم ووجّهونا طوال هذه المرحلة.</p><div class="wh"><b>Eman Nabil</b><small>Infrastructure Engineer at Trojan Construction Holding — دبلومة البيم الشاملة · بنية تحتية</small></div></div><div class="q"><p>عزز التدريب العملي فهمي لنمذجة البنية التحتية ثلاثية الأبعاد والتوثيق الفني ومسارات حصر الكميات وتنسيق النماذج. شكر خاص لـ م. محمود السيد وم. أحمد علي وم. عبد الفتاح الشبراوي على توجيههم القيّم وأسلوبهم العملي ومجهودهم طوال البرنامج.</p><div class="wh"><b>Hesham Abdelhay</b><small>Senior Digital Engineering Engineer | BIM (Revit Structure &amp; Rebar Detailing) — دبلومة البنية التحتية</small></div></div><div class="q"><p>أعتبر Project IN مشروع التخرج من الدبلومة، وأفضل طريقة لتطبيق كل المعرفة والمهارات المكتسبة وربط تعليم البيم بالخبرة الواقعية: تطبيق عملي على مشروع حقيقي من مرحلة مستندات البيم حتى الـ Close out.</p><div class="wh"><b>Mohja Abdelhamied</b><small>Architect &amp; BIM Specialist · Research Assistant · Instructor — Project N</small></div></div><div class="q"><p>منحتنا هذه التجربة فرصة قوية لتطبيق المعرفة النظرية في بيئة عمل حقيقية: عمل جماعي، وتنسيق بين التخصصات، والتعامل مع التحديات وحل التعارضات باحترافية. كانت رحلة مليئة بالتعلّم والتحديات، وأضافت لنا خبرة عملية قيّمة.</p><div class="wh"><b>Arwa Mekky</b><small>Senior Architectural Design · BIM Coordinator — Project N</small></div></div><div class="q"><p>رحلة مفيدة ورائعة في المشروع التجريبي لدبلومة البيم من نقاط، كمنسقة لفريق متعدد التخصصات: التنسيق الداخلي لكل التخصصات، والتنسيق بينها باستخدام Solibri، ومراجعة الـ Clash Matrix، وإدارة الملاحظات بملفات BCF، وصولًا إلى التسليم النهائي 100%.</p><div class="wh"><b>Linda Mohamed</b><small>Senior Technical Civil Engineer · BIM Structural Modeler &amp; Coordinator — Project N</small></div></div><div class="q"><p>النظرية رائعة، لكن تطبيقها على مشروع حقيقي بمعايير عالية هو ما يصنع التحول الحقيقي. وكان أكثر جزء مميز قيادة مراحل التنفيذ: النمذجة المتقدمة، ثم اكتشاف التعارضات والتنسيق على Navisworks لحل التعارضات بين التخصصات بكفاءة.</p><div class="wh"><b>Yassmen Aly, PMP, RMP</b><small>Chief Technical Office Engineer · Hassan Allam Construction (Metro Line 4) — Project N</small></div></div><div class="q"><p>من التخطيط للتسليم: نفّذنا سير عمل صارم متوافق مع المعايير الدولية، بداية من تحديد مستوى المعلومات (LOIN) على Plannerly، ثم النمذجة المشتركة على ACC، ثم التنسيق المتقدم وضبط الجودة، وصولًا لتسليم موديل موحّد. كان المشروع منحنى تعلّم كبير.</p><div class="wh"><b>Hossam A. Fathi</b><small>Structural BIM Engineer · Certified BIM Modeler — Project N</small></div></div></div>
@@ -998,7 +1029,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec gray" id="awards" data-ch="4">
   <div class="wrap">
     <div class="head rv">
-      <div class="eyebrow">14 · Awards</div>
+      <div class="eyebrow">15 · Awards</div>
       <h2>جوائز <span class="o">وتكريمات</span></h2>
       <p class="lead">ذهبية وبرونزية من <span class="en">Big 5 Construct Egypt</span>، وتكريمات من <span class="en">Autodesk</span> على مدار السنين.</p>
     </div>
@@ -1014,7 +1045,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec white" id="clients" data-ch="5">
   <div class="wrap">
     <div class="head rv">
-      <div class="eyebrow">15 · Trusted By</div>
+      <div class="eyebrow">16 · Trusted By</div>
       <h2>جهات <span class="o">وثقت في نقاط</span></h2>
       <p class="lead">جزء من الشركات والجهات الحكومية والأكاديمية التي درّبت فرقها مع نقاط — من بين +200 شركة داخل مصر وخارجها.</p>
     </div>
@@ -1032,7 +1063,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec gray" id="partners" data-ch="5">
   <div class="wrap split">
     <div class="side rv">
-      <div class="eyebrow">16 · Partners</div>
+      <div class="eyebrow">17 · Partners</div>
       <h2>شركاء <span class="o">واعتمادات دولية</span></h2>
       <p class="lead">شراكات تضمن أن ما نُدرّسه مطابق لما تعمل به الصناعة عالميًا.</p>
     </div>
@@ -1053,7 +1084,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec white" id="academia" data-ch="5">
   <div class="wrap">
     <div class="head rv">
-      <div class="eyebrow">17 · Academic Partnerships</div>
+      <div class="eyebrow">18 · Academic Partnerships</div>
       <h2>جسر بين <span class="o">الجامعة وسوق العمل</span></h2>
       <p class="lead">بروتوكولات تعاون مع كليات الهندسة والجهات المهنية، ضمن برنامج <b>سفراء نقاط</b> <span class="en">Niqat Ambassadors</span> — ببرنامج واضح لكل فئة.</p>
     </div>
@@ -1075,7 +1106,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec gray" id="takweenat" data-ch="5">
   <div class="wrap split">
     <div class="side rv">
-      <div class="eyebrow">18 · Takweenat</div>
+      <div class="eyebrow">19 · Takweenat</div>
       <h2>التطبيق على أرض الواقع <span class="o">مع تكوينات</span></h2>
       <div class="tklogo swap" style="margin-top:28px"><img src="assets/takweenat-logo.png" alt="Takweenat — Beyond Architecture"><span class="fb en">Takweenat</span></div>
     </div>
@@ -1093,7 +1124,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 <section class="sec white" id="events" data-ch="5">
   <div class="wrap split">
     <div class="side rv">
-      <div class="eyebrow">19 · Events</div>
+      <div class="eyebrow">20 · Events</div>
       <h2>حاضرون <span class="o">حيث تتشكّل الصناعة</span></h2>
       <p class="lead">معارض ومؤتمرات ومسابقات تربطنا بالسوق والجامعات.</p>
     </div>
