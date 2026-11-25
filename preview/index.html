@@ -577,16 +577,56 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
 .hero h1{font-size:clamp(40px,5.3vw,78px)}.hero h1 .l>span{white-space:nowrap}
 
 /* leadership (catalog instructor cards) */
-#leaders .team{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
-#leaders .mgr{flex:0 0 calc(25% - 12px);display:flex;flex-direction:column;align-items:center;text-align:center;padding:28px 16px;transition:transform .3s var(--ease),box-shadow .3s}
+/* leadership org chart */
+#leaders .org{--ln:#FF6600;--cw:196px;display:flex;flex-direction:column;align-items:center}
+#leaders .org ul{list-style:none;margin:0;padding:0}
+#leaders .org .org-l3{padding-top:28px}
+#leaders .mgr{width:var(--cw);display:flex;flex-direction:column;align-items:center;text-align:center;padding:22px 12px;position:relative;z-index:1;transition:transform .3s var(--ease),box-shadow .3s}
 #leaders .mgr:hover{transform:translateY(-4px);box-shadow:0 0 0 1px #FF6600,0 24px 48px -28px rgba(255,102,0,.55)}
-#leaders .mgr .ph{width:112px;height:112px;border-radius:50%;flex:none;overflow:hidden;background:#FFE0CC;box-shadow:0 0 0 4px #fff,0 0 0 6px #FF6600;margin:6px 0 16px}
+#leaders .mgr .ph{width:96px;height:96px;border-radius:50%;flex:none;overflow:hidden;background:#FFE0CC;box-shadow:0 0 0 4px #fff,0 0 0 6px #FF6600;margin:6px 0 14px}
 #leaders .mgr .ph img{width:100%;height:100%;object-fit:cover;display:block;background:#ECEBE9}
-#leaders .mgr h3{margin:0 0 2px;font-size:19px;font-weight:800;white-space:nowrap}
-#leaders .mgr .tm-n{font-family:Sora,sans-serif;font-size:13px;font-weight:700;color:#FF6600;direction:ltr;unicode-bidi:isolate;white-space:nowrap}
-#leaders .mgr .tm-s{font-family:Sora,sans-serif;font-size:11.5px;font-weight:600;color:#808080;direction:ltr;unicode-bidi:isolate;white-space:nowrap;margin-top:2px}
-@media(max-width:900px){#leaders .mgr{flex-basis:calc(50% - 8px);padding:24px 10px}#leaders .mgr .ph{width:96px;height:96px}#leaders .mgr h3{font-size:16.5px}}
-@media(max-width:400px){#leaders .mgr .tm-s{white-space:normal}}
+#leaders .mgr .tx{display:flex;flex-direction:column;align-items:center}
+#leaders .mgr h3{margin:0 0 2px;font-size:17px;font-weight:800;white-space:nowrap}
+#leaders .mgr .tm-n{font-family:Sora,sans-serif;font-size:12.5px;font-weight:700;color:#FF6600;direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+#leaders .mgr .tm-s{font-family:Sora,sans-serif;font-size:11px;font-weight:600;color:#808080;direction:ltr;unicode-bidi:isolate;white-space:nowrap;margin-top:2px}
+#leaders .org-top .mgr{box-shadow:0 0 0 2px #FF6600,0 24px 48px -30px rgba(255,102,0,.6)}
+#leaders .org-top{position:relative;padding-bottom:28px}
+#leaders .org-top::after{content:"";position:absolute;left:50%;bottom:0;width:2px;height:28px;background:var(--ln);transform:translateX(-50%)}
+#leaders .org-l2,#leaders .org-l3{display:flex;justify-content:center;gap:0}
+#leaders .org li{position:relative;display:flex;flex-direction:column;align-items:center;padding:28px 8px 0}
+#leaders .org li::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--ln)}
+#leaders .org li:first-child::before{right:50%}
+#leaders .org li:last-child::before{left:50%}
+#leaders .org li:only-child::before{display:none}
+#leaders .org li::after{content:"";position:absolute;top:0;left:50%;width:2px;height:28px;background:var(--ln);transform:translateX(-50%)}
+#leaders .org-l3{position:relative;padding-top:28px}
+#leaders .org-l3::before{content:"";position:absolute;top:0;left:50%;width:2px;height:28px;background:var(--ln);transform:translateX(-50%)}
+#leaders .org-l3>li{padding-top:0}
+#leaders .org-l3>li::after{display:none}
+@media(max-width:1100px){#leaders .org{--cw:168px}#leaders .org li{padding-left:5px;padding-right:5px}#leaders .mgr h3{font-size:15.5px}}
+@media(max-width:900px){
+ #leaders .org{align-items:stretch}
+ #leaders .org-top{padding-bottom:0}
+ #leaders .org-top::after{left:auto;right:30px;transform:none;height:100%;bottom:-100%;display:none}
+ #leaders .mgr{width:100%;flex-direction:row;text-align:start;gap:14px;padding:14px 16px}
+ #leaders .mgr .ph{width:64px;height:64px;margin:4px}
+ #leaders .mgr .tx{align-items:flex-start}
+ #leaders .mgr h3{font-size:16px}
+ #leaders .org-l2,#leaders .org-l3{display:block;position:relative}
+ #leaders .org .org-l2{margin-inline-start:30px;padding-top:14px}
+ #leaders .org-l2::before{content:"";position:absolute;top:0;bottom:46px;inset-inline-start:0;width:2px;background:var(--ln)}
+ #leaders .org li{display:block;padding:0 0 12px;padding-inline-start:22px}
+ #leaders .org li::before{top:46px;inset-inline-start:0;left:auto;right:auto;width:22px;height:2px}
+ [dir=rtl] #leaders .org li::before{right:0;left:auto}
+ #leaders .org li:first-child::before,#leaders .org li:last-child::before{left:auto;right:0}
+ #leaders .org-l2>li:has(.org-l3)>.mgr{margin-bottom:0}
+ #leaders .org li:only-child::before{display:block}
+ #leaders .org li::after{display:none}
+ #leaders .org .org-l3{margin-inline-start:30px;padding-top:12px}
+ #leaders .org-l3::before{top:0;bottom:46px;height:auto;inset-inline-start:0;left:auto;right:0;transform:none}
+ #leaders .org-l3>li{padding-bottom:0;padding-inline-start:22px}
+ #leaders .org-l2>li:last-child{padding-bottom:0}
+}
 
 #reviews .quotes{display:none}
 </style>
@@ -740,18 +780,7 @@ footer .sig{font-family:Sora;font-weight:700;font-size:17px}
       <h2>فريق <span class="o">يقود نقاط</span></h2>
       <p class="lead">قيادات بتجمع بين الخبرة الهندسية في السوق وإدارة التعليم والتشغيل، ومعاهم +30 موظف و+60 محاضر متخصص.</p>
     </div>
-    <div class="team"><div class="zone mgr rv"><div class="ph"><img src="../assets/h-aq.webp" alt="م. أحمد القوصي" loading="lazy"></div><h3>م. أحمد القوصي</h3><small class="tm-n">Ahmad AlQuosi</small><small class="tm-s">CEO</small></div><div class="zone mgr rv"><div class="ph"><img src="../assets/h-raafat.webp" alt="م. رأفت الجزار" loading="lazy"></div><h3>م. رأفت الجزار</h3><small class="tm-n">Raafat Al-Gazzar</small><small class="tm-s">Education Director</small></div><div class="zone mgr rv"><div class="ph"><img src="../assets/h-fekry.webp" alt="م. أحمد فكري" loading="lazy"></div><h3>م. أحمد فكري</h3><small class="tm-n">Ahmed Fekry</small><small class="tm-s">Education Manager</small></div><div class="zone mgr rv"><div class="ph"><img src="../assets/h-hussein.webp" alt="محمد حسين" loading="lazy"></div><h3>محمد حسين</h3><small class="tm-n">Mohamed Hussein</small><small class="tm-s">Sales Director · B2B</small></div><div class="zone mgr rv"><div class="ph"><img src="../assets/h-abdelkader.webp" alt="عبدالقادر رياض" loading="lazy"></div><h3>عبدالقادر رياض</h3><small class="tm-n">Abdelkader Reyad</small><small class="tm-s">Operations Manager</small></div><div class="zone mgr rv"><div class="ph"><img src="../assets/h-noha.webp" alt="نهى الناضوري" loading="lazy"></div><h3>نهى الناضوري</h3><small class="tm-n">Noha ElNadori</small><small class="tm-s">HR Manager</small></div><div class="zone mgr rv"><div class="ph"><img src="../assets/h-esmat.webp" alt="أحمد عصمت" loading="lazy"></div><h3>أحمد عصمت</h3><small class="tm-n">Ahmed Esmat</small><small class="tm-s">IT Manager</small></div></div>
-
-<section class="sec gray" id="services" data-ch="2">
-  <div class="wrap split">
-    <div class="side rv">
-      <div class="eyebrow">05 · Services</div>
-      <h2>حلول متكاملة <span class="o">لفريق شركتك</span></h2>
-      <p class="lead">من التدريب إلى تطبيق الـ <span class="en">BIM</span> والاستشارات وتوفير الكفاءات — كل حل يُصمَّم حول احتياج الشركة.</p>
-    </div>
-    <div>
-      <div class="rows">
-        <div class="row rv"><span class="n en">01</span><div><h3>تدريب <span class="en">BIM</span> للشركات</h3><p>برامج مصمّمة حول تخصص الفريق ومستواه ومشروعاته.</p><div class="meta">تقييم مستوى الفريق <span class="o">·</span> محتوى حسب المشروعات <span class="o">·</span> أونلاين أو حضوري</div></div></div>
+    <div class="org"><div class="org-top"><div class="zone mgr rv"><div class="ph"><img src="../assets/h-aq.webp" alt="م. أحمد القوصي" loading="lazy"></div><div class="tx"><h3>م. أحمد القوصي</h3><small class="tm-n">Ahmad AlQuosi</small><small class="tm-s">CEO</small></div></div></div><ul class="org-l2"><li><div class="zone mgr rv"><div class="ph"><img src="../assets/h-raafat.webp" alt="م. رأفت الجزار" loading="lazy"></div><div class="tx"><h3>م. رأفت الجزار</h3><small class="tm-n">Raafat Al-Gazzar</small><small class="tm-s">Education Director</small></div></div><ul class="org-l3"><li><div class="zone mgr rv"><div class="ph"><img src="../assets/h-fekry.webp" alt="م. أحمد فكري" loading="lazy"></div><div class="tx"><h3>م. أحمد فكري</h3><small class="tm-n">Ahmed Fekry</small><small class="tm-s">Education Manager</small></div></div></li></ul></li><li><div class="zone mgr rv"><div class="ph"><img src="../assets/h-hussein.webp" alt="محمد حسين" loading="lazy"></div><div class="tx"><h3>محمد حسين</h3><small class="tm-n">Mohamed Hussein</small><small class="tm-s">Sales Director · B2B</small></div></div></li><li><div class="zone mgr rv"><div class="ph"><img src="../assets/h-abdelkader.webp" alt="عبدالقادر رياض" loading="lazy"></div><div class="tx"><h3>عبدالقادر رياض</h3><small class="tm-n">Abdelkader Reyad</small><small class="tm-s">Operations Manager</small></div></div></li><li><div class="zone mgr rv"><div class="ph"><img src="../assets/h-noha.webp" alt="نهى الناضوري" loading="lazy"></div><div class="tx"><h3>نهى الناضوري</h3><small class="tm-n">Noha ElNadori</small><small class="tm-s">HR Manager</small></div></div></li><li><div class="zone mgr rv"><div class="ph"><img src="../assets/h-esmat.webp" alt="أحمد عصمت" loading="lazy"></div><div class="tx"><h3>أحمد عصمت</h3><small class="tm-n">Ahmed Esmat</small><small class="tm-s">IT Manager</small></div></div></li></ul></div>
         <div class="row rv"><span class="n en">02</span><div><h3>تطبيق <span class="en">BIM</span> في شركتك</h3><p><span class="en">BIM Implementation</span> خطوة بخطوة، من الوضع الحالي حتى التشغيل.</p><div class="meta">تقييم الوضع الحالي <span class="o">·</span> خطة تطبيق مرحلية <span class="o">·</span> مرافقة الفريق حتى التشغيل</div></div></div>
         <div class="row rv"><span class="n en">03</span><div><h3>استشارات <span class="en">BIM</span></h3><p>خبراء يدعمون قراراتك في المعايير وسير العمل والأدوات.</p><div class="meta"><span class="en">ISO 19650</span> <span class="o">·</span> سير العمل واختيار الأدوات <span class="o">·</span> مراجعة النماذج والتسليمات</div></div></div>
         <div class="row rv"><span class="n en">04</span><div><h3>تطبيق <span class="en">ISO 19650</span></h3><p>تأهيل الفرق على إدارة المعلومات وبيئة البيانات المشتركة.</p><div class="meta"><span class="en">OIR · PIR · EIR · BEP</span> <span class="o">·</span> بيئة <span class="en">ACC</span> <span class="o">·</span> معايير التسمية و<span class="en">LOIN</span></div></div></div>
